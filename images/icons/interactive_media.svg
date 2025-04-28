@@ -1,44 +1,284 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
-  <rect width="500" height="300" fill="#f5f7fa" rx="10" ry="10"/>
+  <!-- 향상된 정의 요소 -->
+  <defs>
+    <!-- 그라데이션 및 필터 정의 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    
+    <linearGradient id="mediaWallGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a73e8" />
+      <stop offset="100%" stop-color="#1e88e5" />
+    </linearGradient>
+    
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+    
+    <linearGradient id="dragonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd700" />
+      <stop offset="100%" stop-color="#f9a825" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000044" />
+    </filter>
+    
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <radialGradient id="interactionGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#64b5f6" stop-opacity="1" />
+      <stop offset="100%" stop-color="#64b5f6" stop-opacity="0" />
+    </radialGradient>
+    
+    <radialGradient id="touchGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- 황룡 패턴 -->
+    <pattern id="dragonScale" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0,5 C2.5,0 7.5,0 10,5 C7.5,10 2.5,10 0,5 Z" fill="#f9a825" fill-opacity="0.3" />
+    </pattern>
+  </defs>
+  
+  <!-- 메인 배경 -->
+  <rect width="500" height="300" fill="url(#bgGradient)" rx="10" ry="10"/>
+  
+  <!-- 바닥 반사 그라데이션 -->
+  <ellipse cx="250" cy="290" rx="200" ry="8" fill="#00000022"/>
   
   <!-- 대형 미디어월 -->
-  <rect x="50" y="50" width="200" height="150" fill="#1e88e5" rx="5" ry="5"/>
-  <rect x="60" y="60" width="180" height="130" fill="#111111"/>
+  <g class="media-wall">
+    <rect x="50" y="50" width="200" height="150" fill="url(#mediaWallGradient)" rx="8" ry="8" filter="url(#shadow)"/>
+    <rect x="60" y="60" width="180" height="130" fill="url(#screenGradient)" rx="3" ry="3"/>
+    
+    <!-- 미디어월 빛 효과 -->
+    <rect x="60" y="60" width="180" height="10" fill="#ffffff" fill-opacity="0.1" rx="2" ry="2"/>
+    
+    <!-- 미디어월 콘텐츠 - 황룡 (향상된 버전) -->
+    <g class="dragon">
+      <!-- 황룡 꼬리 -->
+      <path d="M210,105 C225,100 235,90 245,85 C255,80 260,85 250,90 C240,95 230,105 220,110" fill="url(#dragonGradient)">
+        <animate attributeName="d" values="
+          M210,105 C225,100 235,90 245,85 C255,80 260,85 250,90 C240,95 230,105 220,110;
+          M210,105 C225,95 240,85 250,80 C260,75 265,80 255,85 C245,90 235,100 225,105;
+          M210,105 C225,100 235,90 245,85 C255,80 260,85 250,90 C240,95 230,105 220,110" 
+          dur="4s" repeatCount="indefinite"/>
+      </path>
+      
+      <!-- 황룡 몸통 -->
+      <path d="M100,120 C120,100 140,90 160,95 C180,100 195,110 210,105 
+               C190,120 210,130 190,140 C170,150 140,145 120,135 C100,125 90,130 100,120 Z" 
+            fill="url(#dragonGradient)" stroke="#f57c00" stroke-width="0.5" stroke-opacity="0.7"/>
+      
+      <!-- 비늘 패턴 적용 -->
+      <path d="M100,120 C120,100 140,90 160,95 C180,100 195,110 210,105 
+               C190,120 210,130 190,140 C170,150 140,145 120,135 C100,125 90,130 100,120 Z" 
+            fill="url(#dragonScale)"/>
+      
+      <!-- 황룡 머리 -->
+      <path d="M90,115 C95,105 105,105 110,110 C115,115 115,125 110,120" fill="url(#dragonGradient)" stroke="#f57c00" stroke-width="0.5">
+        <animate attributeName="d" values="
+          M90,115 C95,105 105,105 110,110 C115,115 115,125 110,120;
+          M88,113 C93,103 103,103 108,108 C113,113 113,123 108,118;
+          M90,115 C95,105 105,105 110,110 C115,115 115,125 110,120" 
+          dur="2s" repeatCount="indefinite"/>
+      </path>
+      
+      <!-- 눈 -->
+      <circle cx="95" cy="110" r="2" fill="#222222">
+        <animate attributeName="r" values="2;1.5;2" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- 뿔 -->
+      <path d="M85,115 C90,110 92,107 95,105" stroke="#f57c00" stroke-width="1.5" fill="none"/>
+      <path d="M87,112 C92,107 94,104 97,102" stroke="#f57c00" stroke-width="1" fill="none"/>
+      
+      <!-- 용 수염 -->
+      <path d="M90,118 C85,119 80,120 75,119" stroke="#f57c00" stroke-width="0.75" fill="none">
+        <animate attributeName="d" values="
+          M90,118 C85,119 80,120 75,119;
+          M90,118 C85,117 80,118 75,117;
+          M90,118 C85,119 80,120 75,119" 
+          dur="3s" repeatCount="indefinite"/>
+      </path>
+      
+      <!-- 발광 효과 -->
+      <circle cx="150" cy="120" r="40" fill="url(#interactionGlow)" opacity="0.3">
+        <animate attributeName="opacity" values="0.3;0.5;0.3" dur="4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
   
-  <!-- 미디어월 콘텐츠 - 황룡 -->
-  <path d="M140,100 C150,80 200,80 210,100 C220,120 230,130 190,150 C150,130 160,120 170,100 Z" fill="#ffd700"/>
-  <circle cx="170" cy="110" r="5" fill="#ff0000"/>
-  <circle cx="190" cy="110" r="5" fill="#ff0000"/>
-  <path d="M175,125 C180,130 185,130 190,125" stroke="#000000" stroke-width="2" fill="none"/>
+  <!-- 인터랙션을 하는 사람 (향상된 세부 표현) -->
+  <g class="person">
+    <!-- 그림자 -->
+    <ellipse cx="100" cy="280" rx="15" ry="2" fill="#00000033"/>
+    
+    <!-- 다리 -->
+    <path d="M100,245 C95,255 92,265 90,278" stroke="#5e35b1" stroke-width="5" stroke-linecap="round"/>
+    <path d="M100,245 C105,255 108,265 110,278" stroke="#5e35b1" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- 몸통 -->
+    <path d="M100,215 C100,225 100,235 100,245" stroke="#5e35b1" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- 팔 (수정된 자세) -->
+    <path d="M100,225 C90,228 83,235 78,243" stroke="#5e35b1" stroke-width="4" stroke-linecap="round"/>
+    <path d="M100,225 C115,222 130,215 145,210" stroke="#5e35b1" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="d" values="
+        M100,225 C115,222 130,215 145,210;
+        M100,225 C115,220 130,213 145,208;
+        M100,225 C115,222 130,215 145,210" 
+        dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- 머리 -->
+    <circle cx="100" cy="200" r="15" fill="#5e35b1"/>
+    
+    <!-- 얼굴 특징 -->
+    <circle cx="95" cy="197" r="2" fill="#ffffff"/>
+    <circle cx="105" cy="197" r="2" fill="#ffffff"/>
+    <path d="M97,205 C100,207 103,207 105,205" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+  </g>
   
-  <!-- 인터랙션을 하는 사람 -->
-  <circle cx="100" cy="200" r="15" fill="#9c27b0"/>
-  <line x1="100" y1="215" x2="100" y2="240" stroke="#9c27b0" stroke-width="5"/>
-  <line x1="100" y1="220" x2="80" y2="230" stroke="#9c27b0" stroke-width="5"/>
-  <line x1="100" y1="220" x2="120" y2="240" stroke="#9c27b0" stroke-width="5"/>
-  <line x1="100" y1="240" x2="90" y2="270" stroke="#9c27b0" stroke-width="5"/>
-  <line x1="100" y1="240" x2="110" y2="270" stroke="#9c27b0" stroke-width="5"/>
+  <!-- 인터랙션 시각 효과 -->
+  <g class="interaction">
+    <!-- 터치 포인트 -->
+    <circle cx="145" cy="210" r="8" fill="url(#touchGlow)" filter="url(#glow)">
+      <animate attributeName="r" values="8;12;8" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.7;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- 연결선 -->
+    <path d="M145,210 C160,190 180,170 190,140" stroke="#64b5f6" stroke-width="2" stroke-dasharray="5,5" fill="none">
+      <animate attributeName="stroke-dashoffset" values="20;0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- 인터랙션 데이터 흐름을 표현하는 작은 원 -->
+    <circle cx="152" cy="200" r="2" fill="#ffffff">
+      <animate attributeName="cx" values="145;160;180;190" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="210;190;170;140" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
   
-  <!-- 인터랙션 표시 -->
-  <path d="M120,140 C140,160 160,170 170,150" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
-  <circle cx="170" cy="150" r="5" fill="#ffffff"/>
+  <!-- 테마별 체험존 (개선된 디자인) -->
+  <g class="experience-zones">
+    <!-- 황룡 전설존 -->
+    <g class="dragon-zone">
+      <rect x="300" y="50" width="150" height="100" fill="#ffc107" rx="8" ry="8" filter="url(#shadow)"/>
+      <rect x="305" y="55" width="140" height="90" fill="#fff9c4" rx="5" ry="5"/>
+      
+      <!-- 황룡 아이콘 -->
+      <path d="M320,80 C330,75 340,75 350,80 C355,83 360,85 350,90 C340,85 335,83 330,80 Z" fill="url(#dragonGradient)" stroke="#d84315" stroke-width="0.5"/>
+      <circle cx="325" cy="80" r="1" fill="#222222"/>
+      
+      <text x="375" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#d84315">황룡 전설존</text>
+      
+      <!-- 장식 요소 -->
+      <path d="M320,100 L440,100" stroke="#f57c00" stroke-width="1" stroke-dasharray="2,2"/>
+      <text x="375" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#bf360c">황룡의 숨결을 따라 떠나는 여행</text>
+      
+      <!-- 인터랙티브 요소 표시 -->
+      <circle cx="415" cy="75" r="6" fill="#ffffff" stroke="#f57c00" stroke-width="1">
+        <animate attributeName="r" values="6;7;6" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="415" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="8" fill="#d84315">AR</text>
+    </g>
+    
+    <!-- 선비의 길존 -->
+    <g class="scholar-zone">
+      <rect x="300" y="170" width="70" height="70" fill="#4caf50" rx="8" ry="8" filter="url(#shadow)"/>
+      <rect x="305" y="175" width="60" height="60" fill="#c8e6c9" rx="5" ry="5"/>
+      
+<g transform="translate(0,10)">
+      <!-- 붓 아이콘 (개선) -->
+      <line x1="315" y1="220" x2="325" y2="210" stroke="#1b5e20" stroke-width="2"/>
+      <path d="M325,210 L345,190 L350,195 L330,215 Z" fill="#795548"/>
+      <path d="M350,195 L355,190 L345,180 L340,185 Z" fill="#3e2723"/>
+      
+      <!-- 종이 아이콘 -->
+      <rect x="315" y="195" width="20" height="25" fill="#f5f5f5" stroke="#1b5e20" stroke-width="0.5"/>
+      <path d="M318,200 L332,200 M318,205 L332,205 M318,210 L328,210" stroke="#1b5e20" stroke-width="0.5" stroke-dasharray="1,1"/>
+      </g>
+
+      <text x="335" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#1b5e20">선비의 길존</text>
+    </g>
+    
+    <!-- 홍길동 영웅담존 -->
+    <g class="honggildon-zone">
+      <rect x="380" y="170" width="70" height="70" fill="#f44336" rx="8" ry="8" filter="url(#shadow)"/>
+      <rect x="385" y="175" width="60" height="60" fill="#ffcdd2" rx="5" ry="5"/>
+      
+      <!-- 활과 화살 아이콘 (개선) -->
+      <path d="M400,215 C410,205 420,205 430,215" stroke="#b71c1c" stroke-width="2" fill="none"/>
+      <line x1="415" y1="215" x2="415" y2="230" stroke="#b71c1c" stroke-width="1"/>
+      <path d="M413,230 L415,235 L417,230" fill="#b71c1c"/>
+      
+      <text x="415" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#b71c1c">홍길동 영웅담존</text>
+      
+      <!-- 작은 발자국 아이콘 -->
+      <path d="M395,210 C396,208 399,208 400,210 C401,212 401,215 400,217 C399,219 396,219 395,217 C394,215 394,212 395,210 Z" fill="#b71c1c" transform="rotate(15, 400, 210)"/>
+      <path d="M405,220 C406,218 409,218 410,220 C411,222 411,225 410,227 C409,229 406,229 405,227 C404,225 404,222 405,220 Z" fill="#b71c1c" transform="rotate(15, 410, 220)"/>
+    </g>
+  </g>
   
-  <!-- 테마별 체험존 -->
-  <rect x="300" y="50" width="150" height="100" fill="#ffd700" rx="5" ry="5"/>
-  <text x="375" y="100" text-anchor="middle" font-size="14" fill="#000000">황룡 전설존</text>
-  <path d="M350,75 C360,65 390,65 400,75 C410,85 415,90 390,100 C365,90 370,85 380,75 Z" fill="#ff9800"/>
+  <!-- 인터랙션 연결선 (개선된 효과) -->
+  <g class="connection-lines">
+    <!-- 메인 허브 -->
+    <circle cx="250" cy="150" r="12" fill="#1976d2" stroke="#ffffff" stroke-width="2">
+      <animate attributeName="r" values="12;14;12" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- 연결선 1: 허브에서 황룡 전설존 -->
+    <path d="M250,150 C275,120 300,100 375,85" stroke="#64b5f6" stroke-width="2" stroke-dasharray="5,5" fill="none">
+      <animate attributeName="stroke-dashoffset" values="20;0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- 연결선 2: 허브에서 선비의 길존 -->
+    <path d="M250,150 C275,170 290,180 335,195" stroke="#64b5f6" stroke-width="2" stroke-dasharray="5,5" fill="none">
+      <animate attributeName="stroke-dashoffset" values="20;0" dur="2.3s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- 연결선 3: 허브에서 홍길동 영웅담존 -->
+    <path d="M250,150 C300,170 350,180 415,195" stroke="#64b5f6" stroke-width="2" stroke-dasharray="5,5" fill="none">
+      <animate attributeName="stroke-dashoffset" values="20;0" dur="2.6s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- 데이터 패킷 애니메이션 -->
+    <circle cx="250" cy="150" r="3" fill="#ffffff">
+      <animate attributeName="cx" values="250;290;330;375" dur="2s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="150;125;100;85" dur="2s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="2s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="250" cy="150" r="3" fill="#ffffff">
+      <animate attributeName="cx" values="250;290;335" dur="2.3s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="150;170;195" dur="2.3s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="2.3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="250" cy="150" r="3" fill="#ffffff">
+      <animate attributeName="cx" values="250;330;415" dur="2.6s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="150;180;195" dur="2.6s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="2.6s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
   
-  <rect x="300" y="170" width="70" height="70" fill="#4caf50" rx="5" ry="5"/>
-  <text x="335" y="210" text-anchor="middle" font-size="12" fill="#ffffff">선비의 길존</text>
-  
-  <rect x="380" y="170" width="70" height="70" fill="#f44336" rx="5" ry="5"/>
-  <text x="415" y="210" text-anchor="middle" font-size="12" fill="#ffffff">홍길동 영웅담존</text>
-  
-  <!-- 인터랙션 표시 선 -->
-  <path d="M250,150 C275,120 300,120 325,100" stroke="#64b5f6" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
-  <path d="M250,150 C275,180 300,180 335,200" stroke="#64b5f6" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
-  <path d="M250,150 C275,200 300,210 415,200" stroke="#64b5f6" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
-  
-  <text x="250" y="290" text-anchor="middle" font-size="16" fill="#333">인터랙티브 미디어 체험 공간</text>
+  <!-- 타이틀 바 -->
+  <g class="title-bar">
+    <rect x="100" y="275" width="300" height="22" rx="5" ry="5" fill="#546e7a" opacity="0.9"/>
+    <text x="250" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#ffffff">인터랙티브 미디어 체험 공간</text>
+    
+    <!-- 장식 요소 -->
+    <circle cx="120" cy="286" r="3" fill="#64b5f6"/>
+    <circle cx="380" cy="286" r="3" fill="#64b5f6"/>
+  </g>
 </svg>
