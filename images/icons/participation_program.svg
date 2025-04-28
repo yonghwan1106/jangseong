@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="550" height="250" viewBox="0 0 550 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="550" height="250" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 배경 패턴 -->
+  <path d="M0,200 C100,180 200,220 300,180 C400,150 500,180 550,160 L550,250 L0,250 Z" fill="#e8f4f8" opacity="0.5"/>
+  
+  <!-- 5개 마을 영역 표시 -->
+  <rect x="40" y="40" width="90" height="170" rx="10" fill="#f1f9f3" stroke="#2ecc71" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="140" y="40" width="90" height="170" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="240" y="40" width="90" height="170" rx="10" fill="#ebf5fb" stroke="#3498db" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="340" y="40" width="90" height="170" rx="10" fill="#fcf0f0" stroke="#e74c3c" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="440" y="40" width="70" height="170" rx="10" fill="#f4ecf7" stroke="#9b59b6" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- 황룡면 -->
+  <text x="85" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#27ae60">황룡면</text>
+  
+  <!-- 황룡 전설 공연 -->
+  <g transform="translate(65, 100)">
+    <circle cx="0" cy="-5" r="8" fill="#27ae60"/>
+    <path d="M0,3 L0,20" stroke="#27ae60" stroke-width="3"/>
+    <path d="M0,10 L-7,20" stroke="#27ae60" stroke-width="2"/>
+    <path d="M0,10 L7,20" stroke="#27ae60" stroke-width="2"/>
+    <rect x="-15" y="-15" width="30" height="5" fill="#f1c40f"/>
+    <path d="M-15,-15 C-5,-25 5,-25 15,-15" stroke="#f1c40f" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- 매실 체험 -->
+  <g transform="translate(85, 160)">
+    <circle cx="0" cy="0" r="10" fill="#f1c40f"/>
+    <path d="M0,-5 L0,5" stroke="#27ae60" stroke-width="1"/>
+    <circle cx="-5" cy="-2" r="3" fill="#9b59b6"/>
+    <circle cx="5" cy="-2" r="3" fill="#9b59b6"/>
+    <circle cx="0" cy="2" r="3" fill="#9b59b6"/>
+  </g>
+  
+  <!-- 진원면 -->
+  <text x="185" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#f39c12">진원면</text>
+  
+  <!-- 전통 장류 -->
+  <g transform="translate(165, 100)">
+    <rect x="-10" y="-15" width="20" height="25" rx="2" fill="#e67e22"/>
+    <rect x="-8" y="-13" width="16" height="10" fill="#f5b041"/>
+    <rect x="-8" y="-1" width="16" height="9" fill="#f8c471"/>
+  </g>
+  
+  <!-- 농가 체험 -->
+  <g transform="translate(185, 160)">
+    <path d="M-10,-10 L0,-20 L10,-10 L10,5 L-10,5 Z" fill="#e74c3c"/>
+    <rect x="-5" y="-5" width="10" height="10" fill="#ecf0f1"/>
+    <path d="M-15,5 L15,5" stroke="#f39c12" stroke-width="2"/>
+    <path d="M-10,5 L-10,15" stroke="#7d3c98" stroke-width="1"/>
+    <path d="M10,5 L10,15" stroke="#7d3c98" stroke-width="1"/>
+  </g>
+  
+  <!-- 북하면 -->
+  <text x="285" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#3498db">북하면</text>
+  
+  <!-- 산나물 채취 -->
+  <g transform="translate(265, 100)">
+    <path d="M-10,0 L0,-15 L10,0" stroke="#27ae60" stroke-width="2" fill="none"/>
+    <path d="M-5,-5 L0,-10 L5,-5" stroke="#27ae60" stroke-width="2" fill="none"/>
+    <path d="M-8,-2 L0,-5 L8,-2" stroke="#27ae60" stroke-width="2" fill="none"/>
+    <circle cx="0" cy="5" r="5" fill="#3498db"/>
+    <path d="M0,10 L0,15" stroke="#3498db" stroke-width="2"/>
+    <path d="M-3,12 L3,12" stroke="#3498db" stroke-width="1"/>
+  </g>
+  
+  <!-- 축령산 명상 -->
+  <g transform="translate(285, 160)">
+    <path d="M-15,10 L-8,-5 L0,5 L8,-10 L15,10" fill="#1abc9c"/>
+    <circle cx="0" cy="-5" r="6" fill="#3498db"/>
+    <path d="M0,1 L0,10" stroke="#3498db" stroke-width="2"/>
+    <path d="M-5,5 L5,5" stroke="#3498db" stroke-width="2"/>
+  </g>
+  
+  <!-- 장성읍 -->
+  <text x="385" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#e74c3c">장성읍</text>
+  
+  <!-- 도시재생 -->
+  <g transform="translate(365, 100)">
+    <rect x="-15" y="-10" width="10" height="20" fill="#e74c3c"/>
+    <rect x="0" y="-15" width="15" height="25" fill="#f1c40f"/>
+    <rect x="-10" y="-5" width="20" height="5" fill="#ecf0f1"/>
+    <rect x="-5" y="5" width="5" height="5" fill="#3498db"/>
+    <rect x="5" y="0" width="5" height="5" fill="#3498db"/>
+  </g>
+  
+  <!-- 시장 투어 -->
+  <g transform="translate(385, 160)">
+    <rect x="-15" y="-10" width="30" height="20" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+    <rect x="-12" y="-7" width="8" height="5" fill="#e74c3c"/>
+    <rect x="-2" y="-7" width="8" height="5" fill="#f1c40f"/>
+    <rect x="8" y="-7" width="8" height="5" fill="#2ecc71"/>
+    <rect x="-12" y="0" width="8" height="5" fill="#3498db"/>
+    <rect x="-2" y="0" width="8" height="5" fill="#9b59b6"/>
+    <rect x="8" y="0" width="8" height="5" fill="#e67e22"/>
+  </g>
+  
+  <!-- 교류 프로그램 -->
+  <text x="475" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#9b59b6">교류 프로그램</text>
+  
+  <!-- 세대 연계 -->
+  <g transform="translate(465, 110)">
+    <!-- 어르신 -->
+    <circle cx="-10" cy="-5" r="7" fill="#7d3c98"/>
+    <path d="M-10,2 L-10,15" stroke="#7d3c98" stroke-width="3"/>
+    <path d="M-10,8 L-15,15" stroke="#7d3c98" stroke-width="2"/>
+    <path d="M-10,8 L-5,15" stroke="#7d3c98" stroke-width="2"/>
+    
+    <!-- 청소년 -->
+    <circle cx="10" cy="0" r="5" fill="#3498db"/>
+    <path d="M10,5 L10,15" stroke="#3498db" stroke-width="2"/>
+    <path d="M10,8 L5,15" stroke="#3498db" stroke-width="2"/>
+    <path d="M10,8 L15,15" stroke="#3498db" stroke-width="2"/>
+    
+    <!-- 연결선 -->
+    <path d="M-5,-5 C0,-8 5,-8 10,-5" stroke="#9b59b6" stroke-width="1" stroke-dasharray="2,2"/>
+  </g>
+  
+  <!-- 가족 단위 -->
+  <g transform="translate(465, 170)">
+    <!-- 부모 -->
+    <circle cx="-10" cy="-5" r="6" fill="#e74c3c"/>
+    <path d="M-10,1 L-10,10" stroke="#e74c3c" stroke-width="2"/>
+    <path d="M-10,5 L-15,10" stroke="#e74c3c" stroke-width="2"/>
+    <path d="M-10,5 L-5,10" stroke="#e74c3c" stroke-width="2"/>
+    
+    <!-- 자녀 -->
+    <circle cx="0" cy="0" r="4" fill="#f1c40f"/>
+    <path d="M0,4 L0,8" stroke="#f1c40f" stroke-width="1.5"/>
+    <path d="M0,6 L-3,9" stroke="#f1c40f" stroke-width="1.5"/>
+    <path d="M0,6 L3,9" stroke="#f1c40f" stroke-width="1.5"/>
+    
+    <!-- 관광객 가족 -->
+    <circle cx="10" cy="-5" r="6" fill="#2ecc71"/>
+    <path d="M10,1 L10,10" stroke="#2ecc71" stroke-width="2"/>
+    <path d="M10,5 L5,10" stroke="#2ecc71" stroke-width="2"/>
+    <path d="M10,5 L15,10" stroke="#2ecc71" stroke-width="2"/>
+  </g>
+  
+  <!-- 중앙 황룡 이미지 -->
+  <g transform="translate(275, 20)">
+    <path d="M-30,0 C-20,-10 20,-10 30,0 C40,10 50,15 30,25 C10,15 20,10 30,0" stroke="#ffd700" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- 타이틀 -->
+  <text x="275" y="230" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">주민참여 체험 프로그램</text>
+</svg>

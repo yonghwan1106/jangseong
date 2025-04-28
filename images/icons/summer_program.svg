@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e3f2fd" rx="10" ry="10"/>
+  
+  <!-- 밤하늘 그라데이션 -->
+  <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#0d47a1"/>
+    <stop offset="100%" stop-color="#1976d2"/>
+  </linearGradient>
+  <rect x="30" y="30" width="240" height="100" fill="url(#nightSky)" rx="5" ry="5"/>
+  
+  <!-- 별들 -->
+  <circle cx="60" cy="50" r="1.5" fill="#fff"/>
+  <circle cx="90" cy="45" r="1" fill="#fff"/>
+  <circle cx="120" cy="55" r="1.5" fill="#fff"/>
+  <circle cx="150" cy="40" r="1" fill="#fff"/>
+  <circle cx="180" cy="60" r="1.5" fill="#fff"/>
+  <circle cx="210" cy="50" r="1" fill="#fff"/>
+  <circle cx="240" cy="45" r="1.5" fill="#fff"/>
+  <circle cx="70" cy="70" r="1" fill="#fff"/>
+  <circle cx="100" cy="65" r="1.5" fill="#fff"/>
+  <circle cx="130" cy="75" r="1" fill="#fff"/>
+  <circle cx="160" cy="60" r="1.5" fill="#fff"/>
+  <circle cx="190" cy="80" r="1" fill="#fff"/>
+  <circle cx="220" cy="70" r="1.5" fill="#fff"/>
+  <circle cx="250" cy="65" r="1" fill="#fff"/>
+  
+  <!-- 큰 별 (반짝임) -->
+  <circle cx="80" cy="60" r="2.5" fill="#fff"/>
+  <circle cx="170" cy="50" r="2.5" fill="#fff"/>
+  <circle cx="230" cy="80" r="2.5" fill="#fff"/>
+  
+  <!-- 은하수 -->
+  <path d="M30,70 C80,50 150,90 270,60" stroke="#fff" stroke-width="3" stroke-opacity="0.2" fill="none"/>
+  <path d="M30,70 C80,50 150,90 270,60" stroke="#fff" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="1,5" fill="none"/>
+  
+  <!-- 달 -->
+  <circle cx="230" cy="60" r="15" fill="#ffd54f"/>
+  <circle cx="222" cy="55" r="5" fill="#ffd54f" opacity="0.5"/>
+  <circle cx="225" cy="65" r="3" fill="#ffd54f" opacity="0.5"/>
+  
+  <!-- 물/강 표현 -->
+  <path d="M30,130 C80,125 150,135 270,125" stroke="#0277bd" stroke-width="15" fill="none"/>
+  <path d="M30,130 C80,125 150,135 270,125" stroke="#29b6f6" stroke-width="8" fill="none" opacity="0.5"/>
+  <path d="M30,130 C80,125 150,135 270,125" stroke="#fff" stroke-width="2" fill="none" opacity="0.3" stroke-dasharray="5,10"/>
+  
+  <!-- 보트 -->
+  <path d="M120,120 L150,120 L145,130 L125,130 Z" fill="#795548"/>
+  <line x1="135" y1="120" x2="135" y2="105" stroke="#a1887f" stroke-width="1.5"/>
+  <path d="M135,105 L135,120 L145,115 Z" fill="#a1887f"/>
+  
+  <!-- 천문가이드 -->
+  <g transform="translate(60, 80)">
+    <circle cx="0" cy="0" r="7" fill="#e91e63"/>
+    <path d="M0,7 L0,15" stroke="#e91e63" stroke-width="3"/>
+    <path d="M-3,10 L3,10" stroke="#e91e63" stroke-width="1.5"/>
+    <path d="M0,15 L-5,25" stroke="#e91e63" stroke-width="2"/>
+    <path d="M0,15 L5,25" stroke="#e91e63" stroke-width="2"/>
+    <rect x="-3" y="-2" width="6" height="4" fill="#fff"/>
+  </g>
+  
+  <!-- 관광객 -->
+  <g transform="translate(85, 85)">
+    <circle cx="0" cy="0" r="5" fill="#03a9f4"/>
+    <path d="M0,5 L0,12" stroke="#03a9f4" stroke-width="2"/>
+    <path d="M0,12 L-3,20" stroke="#03a9f4" stroke-width="1.5"/>
+    <path d="M0,12 L3,20" stroke="#03a9f4" stroke-width="1.5"/>
+    <path d="M-3,8 L3,8" stroke="#03a9f4" stroke-width="1"/>
+  </g>
+  
+  <!-- 투사 방향 -->
+  <path d="M170,100 L200,90" stroke="#fff" stroke-width="1" stroke-dasharray="2,2"/>
+  <path d="M170,100 L200,100" stroke="#fff" stroke-width="1" stroke-dasharray="2,2"/>
+  <path d="M170,100 L200,110" stroke="#fff" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- 프로젝션 맵핑 장치 -->
+  <rect x="160" y="95" width="20" height="10" fill="#424242"/>
+  <circle cx="170" cy="100" r="3" fill="#29b6f6"/>
+  
+  <!-- 프로젝션 대상 (황룡) -->
+  <path d="M200,100 C210,95 220,95 230,100 C240,105 245,108 235,115 C225,110 228,108 230,100" stroke="#ffd54f" stroke-width="2" fill="none"/>
+  
+  <!-- 장성호 물가 선 -->
+  <path d="M30,170 L270,170" stroke="#a5d6a7" stroke-width="5"/>
+  <path d="M50,170 L80,170 C75,160 85,160 85,170 L100,170 C95,160 105,160 100,170 L120,170 C115,160 125,160 120,170 L140,170" stroke="#2e7d32" stroke-width="2" fill="none"/>
+  <path d="M160,170 L190,170 C185,160 195,160 195,170 L210,170 C205,160 215,160 215,170 L230,170 C225,160 235,160 230,170 L250,170" stroke="#2e7d32" stroke-width="2" fill="none"/>
+  
+  <!-- 여름 글자 -->
+  <text x="150" y="180" text-anchor="middle" font-size="24" font-weight="bold" fill="#1976d2">여름 시즌 프로그램</text>
+</svg>

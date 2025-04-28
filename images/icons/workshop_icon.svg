@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="150" height="150" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 테이블 -->
+  <rect x="25" y="85" width="100" height="10" fill="#a67c52"/>
+  <rect x="30" y="95" width="5" height="35" fill="#8c6239"/>
+  <rect x="115" y="95" width="5" height="35" fill="#8c6239"/>
+  
+  <!-- 의자들 -->
+  <rect x="35" y="100" width="20" height="5" fill="#7f8c8d"/>
+  <rect x="40" y="105" width="10" height="25" fill="#7f8c8d"/>
+  
+  <rect x="95" y="100" width="20" height="5" fill="#7f8c8d"/>
+  <rect x="100" y="105" width="10" height="25" fill="#7f8c8d"/>
+  
+  <!-- 사람들 -->
+  <g transform="translate(45, 75)">
+    <!-- 왼쪽 사람 -->
+    <circle cx="0" cy="0" r="8" fill="#3498db"/>
+    <path d="M0,8 L0,20" stroke="#3498db" stroke-width="3"/>
+    <path d="M0,12 L-5,20" stroke="#3498db" stroke-width="2"/>
+    <path d="M0,12 L5,20" stroke="#3498db" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(105, 75)">
+    <!-- 오른쪽 사람 -->
+    <circle cx="0" cy="0" r="8" fill="#e74c3c"/>
+    <path d="M0,8 L0,20" stroke="#e74c3c" stroke-width="3"/>
+    <path d="M0,12 L-5,20" stroke="#e74c3c" stroke-width="2"/>
+    <path d="M0,12 L5,20" stroke="#e74c3c" stroke-width="2"/>
+  </g>
+  
+  <!-- 강의자/진행자 -->
+  <g transform="translate(75, 55)">
+    <circle cx="0" cy="0" r="10" fill="#2c3e50"/>
+    <path d="M0,10 L0,25" stroke="#2c3e50" stroke-width="4"/>
+    <path d="M0,15 L-10,25" stroke="#2c3e50" stroke-width="3"/>
+    <path d="M0,15 L10,25" stroke="#2c3e50" stroke-width="3"/>
+  </g>
+  
+  <!-- 손동작 표현 -->
+  <path d="M55,70 C60,65 65,68 70,70" stroke="#3498db" stroke-width="2" fill="none"/>
+  <path d="M95,70 C90,65 85,68 80,70" stroke="#e74c3c" stroke-width="2" fill="none"/>
+  
+  <!-- 교육 자료 -->
+  <rect x="65" y="85" width="20" height="15" rx="1" fill="#ecf0f1"/>
+  <line x1="68" y1="90" x2="82" y2="90" stroke="#7f8c8d" stroke-width="1"/>
+  <line x1="68" y1="95" x2="82" y2="95" stroke="#7f8c8d" stroke-width="1"/>
+  
+  <!-- 체험 재료 -->
+  <circle cx="55" y="92" r="3" fill="#f1c40f"/>
+  <circle cx="95" y="92" r="3" fill="#27ae60"/>
+  
+  <!-- 보드 -->
+  <rect x="50" y="25" width="50" height="30" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="55" y1="35" x2="95" y2="35" stroke="#7f8c8d" stroke-width="1"/>
+  <line x1="55" y1="45" x2="85" y2="45" stroke="#7f8c8d" stroke-width="1"/>
+  
+  <!-- 제목 -->
+  <text x="75" y="140" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">주민-관광객 워크숍</text>
+</svg>

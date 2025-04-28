@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="450" height="300" viewBox="0 0 450 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="450" height="300" fill="#f5f7fa" rx="10" ry="10"/>
+  
+  <!-- 서버/데이터베이스 -->
+  <rect x="60" y="130" width="80" height="120" fill="#34495e" rx="5" ry="5"/>
+  <rect x="70" y="140" width="60" height="10" fill="#3498db"/>
+  <rect x="70" y="155" width="60" height="10" fill="#3498db"/>
+  <rect x="70" y="170" width="60" height="10" fill="#3498db"/>
+  <rect x="70" y="185" width="60" height="10" fill="#3498db"/>
+  <rect x="70" y="200" width="60" height="10" fill="#3498db"/>
+  <rect x="70" y="215" width="60" height="10" fill="#3498db"/>
+  <rect x="70" y="230" width="30" height="10" fill="#3498db"/>
+  
+  <!-- 분석 플랫폼 -->
+  <rect x="180" y="80" width="120" height="160" fill="#2c3e50" rx="5" ry="5"/>
+  <rect x="190" y="90" width="100" height="60" fill="#ecf0f1"/>
+  
+  <!-- 데이터 흐름 그래프 -->
+  <path d="M200,115 L220,100 L240,130 L260,110 L280,120" stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <path d="M200,130 L220,125 L240,115 L260,140 L280,130" stroke="#2ecc71" stroke-width="2" fill="none"/>
+  <circle cx="220" cy="100" r="3" fill="#e74c3c"/>
+  <circle cx="240" cy="130" r="3" fill="#e74c3c"/>
+  <circle cx="260" cy="110" r="3" fill="#e74c3c"/>
+  <circle cx="220" cy="125" r="3" fill="#2ecc71"/>
+  <circle cx="240" cy="115" r="3" fill="#2ecc71"/>
+  <circle cx="260" cy="140" r="3" fill="#2ecc71"/>
+  
+  <!-- 분석 결과 아이콘 -->
+  <rect x="190" y="160" width="45" height="35" fill="#3498db" rx="3" ry="3"/>
+  <rect x="245" y="160" width="45" height="35" fill="#e74c3c" rx="3" ry="3"/>
+  <rect x="190" y="200" width="45" height="35" fill="#2ecc71" rx="3" ry="3"/>
+  <rect x="245" y="200" width="45" height="35" fill="#f39c12" rx="3" ry="3"/>
+  
+  <!-- 기어 아이콘 (분석 과정) -->
+  <circle cx="212" cy="177" r="12" fill="#ecf0f1" stroke="#34495e" stroke-width="1"/>
+  <path d="M212,165 L212,168 M212,186 L212,189 M200,177 L203,177 M221,177 L224,177 M204,169 L206,171 M218,183 L220,185 M204,185 L206,183 M220,169 L218,171" stroke="#34495e" stroke-width="2"/>
+  <circle cx="212" cy="177" r="5" fill="#34495e"/>
+  
+  <!-- 차트 아이콘 -->
+  <rect x="255" y="165" width="25" height="25" fill="#ecf0f1" stroke="#34495e" stroke-width="1"/>
+  <rect x="260" y="175" width="5" height="10" fill="#e74c3c"/>
+  <rect x="270" y="170" width="5" height="15" fill="#e74c3c"/>
+  
+  <!-- AI/머신러닝 표현 -->
+  <rect x="200" y="205" width="25" height="25" fill="#ecf0f1" stroke="#34495e" stroke-width="1"/>
+  <path d="M205,210 L220,210 M205,217 L220,217 M205,224 L220,224" stroke="#2ecc71" stroke-width="2"/>
+  <circle cx="208" cy="210" r="2" fill="#2ecc71"/>
+  <circle cx="212" cy="217" r="2" fill="#2ecc71"/>
+  <circle cx="217" cy="224" r="2" fill="#2ecc71"/>
+  
+  <!-- 사용자 아이콘 -->
+  <path d="M266,208 L266,218 M261,210 L261,218 M271,210 L271,218 M261,213 L271,213" stroke="#f39c12" stroke-width="2"/>
+  <circle cx="266" cy="205" r="4" fill="#f39c12"/>
+  
+  <!-- 대시보드/화면 -->
+  <rect x="340" y="100" width="90" height="75" fill="#2c3e50" rx="5" ry="5"/>
+  <rect x="345" y="105" width="80" height="65" fill="#ecf0f1"/>
+  <path d="M350,115 L370,125 L390,115 L410,130" stroke="#3498db" stroke-width="2" fill="none"/>
+  <path d="M350,130 L370,120 L390,135 L410,115" stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <rect x="350" y="145" width="70" height="20" fill="#f5f5f5" stroke="#95a5a6" stroke-width="1"/>
+  <rect x="355" y="150" width="15" height="10" fill="#3498db"/>
+  <rect x="375" y="150" width="15" height="10" fill="#e74c3c"/>
+  <rect x="395" y="150" width="15" height="10" fill="#2ecc71"/>
+  
+  <!-- 모바일 장치 -->
+  <rect x="365" y="190" width="30" height="55" fill="#34495e" rx="3" ry="3"/>
+  <rect x="370" y="195" width="20" height="35" fill="#ecf0f1"/>
+  <rect x="375" y="235" width="10" height="5" rx="2" ry="2" fill="#ecf0f1"/>
+  <line x1="375" y1="205" x2="385" y2="205" stroke="#3498db" stroke-width="1"/>
+  <line x1="375" y1="210" x2="385" y2="210" stroke="#3498db" stroke-width="1"/>
+  <line x1="375" y1="215" x2="385" y2="215" stroke="#2ecc71" stroke-width="1"/>
+  <line x1="375" y1="220" x2="380" y2="220" stroke="#e74c3c" stroke-width="1"/>
+  
+  <!-- 데이터 연결선 -->
+  <path d="M140,170 C160,170 160,140 180,140" stroke="#3498db" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+  <path d="M300,140 C320,140 320,140 340,140" stroke="#3498db" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+  <path d="M375,180 C375,185 375,185 375,190" stroke="#3498db" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+  
+  <!-- 관광객 -->
+  <circle cx="100" cy="80" r="10" fill="#3498db"/>
+  <path d="M100,90 L100,110 M90,95 L110,95 M90,115 L100,110 L110,115" stroke="#3498db" stroke-width="2"/>
+  
+  <!-- 스마트폰 -->
+  <rect x="85" cy="85" width="15" height="25" fill="#34495e" rx="2" ry="2"/>
+  <rect x="88" cy="88" width="9" height="15" fill="#ecf0f1"/>
+  
+  <!-- 데이터 전송 -->
+  <path d="M115,85 C140,60 160,60 180,85" stroke="#3498db" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+  <path d="M125,75 L130,70 L135,75" stroke="#3498db" stroke-width="2" fill="none"/>
+  
+  <text x="225" y="275" text-anchor="middle" font-size="16" fill="#333">데이터 분석 및 관리 플랫폼</text>
+</svg>

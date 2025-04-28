@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 기어 -->
+  <circle cx="100" cy="100" r="40" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <circle cx="100" cy="100" r="15" fill="#fff" stroke="#333" stroke-width="2"/>
+  <path d="M100,50 L100,60 M100,140 L100,150 M50,100 L60,100 M140,100 L150,100 M64,64 L71,71 M129,129 L136,136 M64,136 L71,129 M136,64 L129,71" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- 공구 -->
+  <path d="M200,70 L240,110 L230,120 L190,80 Z" fill="#4169E1"/>
+  <rect x="185" y="75" width="10" height="10" transform="rotate(45 190 80)" fill="#333"/>
+  
+  <path d="M230,120 L270,160 C275,165 285,165 290,160 C295,155 295,145 290,140 L250,100" fill="#4169E1"/>
+  
+  <!-- 차트 -->
+  <rect x="300" y="60" width="60" height="80" fill="#fff" stroke="#333" stroke-width="2"/>
+  <line x1="310" y1="80" x2="350" y2="80" stroke="#4169E1" stroke-width="2"/>
+  <line x1="310" y1="100" x2="340" y2="100" stroke="#4169E1" stroke-width="2"/>
+  <line x1="310" y1="120" x2="330" y2="120" stroke="#4169E1" stroke-width="2"/>
+  
+  <!-- 사람들 -->
+  <circle cx="100" cy="170" r="10" fill="#28A745"/>
+  <path d="M100,180 L100,195" stroke="#28A745" stroke-width="2"/>
+  <path d="M100,185 L90,195 M100,185 L110,195" stroke="#28A745" stroke-width="2"/>
+  
+  <circle cx="125" cy="170" r="10" fill="#4169E1"/>
+  <path d="M125,180 L125,195" stroke="#4169E1" stroke-width="2"/>
+  <path d="M125,185 L115,195 M125,185 L135,195" stroke="#4169E1" stroke-width="2"/>
+  
+  <circle cx="150" cy="170" r="10" fill="#DC3545"/>
+  <path d="M150,180 L150,195" stroke="#DC3545" stroke-width="2"/>
+  <path d="M150,185 L140,195 M150,185 L160,195" stroke="#DC3545" stroke-width="2"/>
+  
+  <text x="200" y="185" text-anchor="middle" font-size="16" fill="#333">유지관리 시스템</text>
+</svg>

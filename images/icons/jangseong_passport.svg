@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="450" height="600" viewBox="0 0 450 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="450" height="600" fill="#f8f9fa" rx="0" ry="0"/>
+  
+  <!-- 패스포트 표지 -->
+  <rect x="50" y="50" width="350" height="500" fill="#ffd700" rx="10" ry="10"/>
+  <rect x="60" y="60" width="330" height="480" fill="#ffc107" rx="5" ry="5"/>
+  
+  <!-- 패스포트 바인딩 -->
+  <rect x="50" y="50" width="20" height="500" fill="#e6b800" rx="2" ry="2"/>
+  <line x1="60" y1="80" x2="60" y2="520" stroke="#ffeeba" stroke-width="2" stroke-dasharray="15,10"/>
+  
+  <!-- 타이틀 -->
+  <text x="225" y="110" text-anchor="middle" font-size="24" font-weight="bold" fill="#5d4037">장성 스토리로드</text>
+  <text x="225" y="140" text-anchor="middle" font-size="22" font-weight="bold" fill="#5d4037">PASSPORT</text>
+  
+  <!-- 황룡 로고 -->
+  <g transform="translate(225, 200)">
+    <circle cx="0" cy="0" r="60" fill="#fff" opacity="0.6"/>
+    <path d="M-40,0 C-20,-20 20,-20 40,0 C60,20 70,30 40,50 C10,30 20,20 40,0" stroke="#5d4037" stroke-width="4" fill="none"/>
+    <circle cx="-20" cy="-5" r="5" fill="#5d4037"/>
+    <circle cx="20" cy="-5" r="5" fill="#5d4037"/>
+  </g>
+  
+  <!-- 테마 섹션 표시 -->
+  <rect x="100" y="280" width="250" height="40" fill="#fff" opacity="0.8" rx="5" ry="5"/>
+  <text x="225" y="307" text-anchor="middle" font-size="18" font-weight="bold" fill="#5d4037">5개 테마 스토리로드</text>
+  
+  <!-- 테마 아이콘 -->
+  <g transform="translate(130, 350)">
+    <circle cx="0" cy="0" r="15" fill="#fff"/>
+    <text x="0" y="5" text-anchor="middle" font-size="14" font-weight="bold" fill="#e65100">황룡</text>
+  </g>
+  
+  <g transform="translate(180, 350)">
+    <circle cx="0" cy="0" r="15" fill="#fff"/>
+    <text x="0" y="5" text-anchor="middle" font-size="14" font-weight="bold" fill="#1976d2">선비</text>
+  </g>
+  
+  <g transform="translate(230, 350)">
+    <circle cx="0" cy="0" r="15" fill="#fff"/>
+    <text x="0" y="5" text-anchor="middle" font-size="14" font-weight="bold" fill="#d32f2f">홍길동</text>
+  </g>
+  
+  <g transform="translate(280, 350)">
+    <circle cx="0" cy="0" r="15" fill="#fff"/>
+    <text x="0" y="5" text-anchor="middle" font-size="14" font-weight="bold" fill="#388e3c">불교</text>
+  </g>
+  
+  <g transform="translate(330, 350)">
+    <circle cx="0" cy="0" r="15" fill="#fff"/>
+    <text x="0" y="5" text-anchor="middle" font-size="12" font-weight="bold" fill="#0097a7">맛과멋</text>
+  </g>
+  
+  <!-- 스탬프 예시 -->
+  <g transform="translate(120, 420)">
+    <circle cx="0" cy="0" r="20" fill="#fff" stroke="#5d4037" stroke-width="1" stroke-dasharray="2,2"/>
+  </g>
+  
+  <g transform="translate(170, 420)">
+    <circle cx="0" cy="0" r="20" fill="#fff" stroke="#5d4037" stroke-width="1"/>
+    <text x="0" y="5" text-anchor="middle" font-size="12" font-weight="bold" fill="#5d4037">황룡강</text>
+  </g>
+  
+  <g transform="translate(220, 420)">
+    <circle cx="0" cy="0" r="20" fill="#fff" stroke="#5d4037" stroke-width="1" stroke-dasharray="2,2"/>
+  </g>
+  
+  <g transform="translate(270, 420)">
+    <circle cx="0" cy="0" r="20" fill="#fff" stroke="#5d4037" stroke-width="1" stroke-dasharray="2,2"/>
+  </g>
+  
+  <g transform="translate(320, 420)">
+    <circle cx="0" cy="0" r="20" fill="#fff" stroke="#5d4037" stroke-width="1" stroke-dasharray="2,2"/>
+  </g>
+  
+  <!-- QR 코드 예시 -->
+  <g transform="translate(170, 490)">
+    <rect x="-30" y="-30" width="60" height="60" fill="#fff"/>
+    <rect x="-20" y="-20" width="10" height="10" fill="#000"/>
+    <rect x="10" y="-20" width="10" height="10" fill="#000"/>
+    <rect x="-20" y="10" width="10" height="10" fill="#000"/>
+    <rect x="-10" y="-10" width="20" height="20" fill="#000"/>
+    <rect x="-5" y="-5" width="10" height="10" fill="#fff"/>
+    <path d="M-15,-25 L-25,-25 L-25,-15 M15,-25 L25,-25 L25,-15 M-15,25 L-25,25 L-25,15" stroke="#000" stroke-width="5" fill="none"/>
+  </g>
+  
+  <!-- 디지털 연동 아이콘 -->
+  <g transform="translate(290, 490)">
+    <rect x="-30" y="-30" width="60" height="60" rx="10" ry="10" fill="#fff"/>
+    <rect x="-20" y="-15" width="40" height="30" rx="5" ry="5" fill="#1976d2"/>
+    <rect x="-15" y="-10" width="30" height="20" fill="#90caf9"/>
+    <circle cx="0" cy="20" r="5" fill="#1976d2"/>
+  </g>
+  
+  <!-- 바코드 -->
+  <g transform="translate(225, 560)">
+    <rect x="-80" y="-10" width="160" height="20" fill="#fff"/>
+    <path d="M-75,10 L-75,-10 M-70,10 L-70,-10 M-65,10 L-65,-10 M-60,10 L-60,-10 M-55,10 L-55,-10 M-45,10 L-45,-10 M-35,10 L-35,-10 M-30,10 L-30,-10 M-20,10 L-20,-10 M-10,10 L-10,-10 M-5,10 L-5,-10 M0,10 L0,-10 M10,10 L10,-10 M15,10 L15,-10 M25,10 L25,-10 M30,10 L30,-10 M40,10 L40,-10 M50,10 L50,-10 M55,10 L55,-10 M65,10 L65,-10 M70,10 L70,-10 M75,10 L75,-10" stroke="#000" stroke-width="2"/>
+  </g>
+  
+  <!-- 하단 정보 -->
+  <text x="225" y="530" text-anchor="middle" font-size="12" fill="#5d4037">황룡의 숨결을 따라</text>
+  <text x="225" y="545" text-anchor="middle" font-size="10" fill="#5d4037">장성군 관광과 발행</text>
+</svg>

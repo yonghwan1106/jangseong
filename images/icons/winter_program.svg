@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e8eaf6" rx="10" ry="10"/>
+  
+  <!-- 배경: 겨울 풍경 -->
+  <rect x="30" y="150" width="240" height="30" fill="#fff"/>
+  <path d="M30,150 C60,145 90,155 120,145 C150,140 180,150 210,145 C240,140 270,145 270,150" fill="#fff"/>
+  
+  <!-- 산 배경 -->
+  <path d="M30,150 L80,80 L130,120 L180,70 L230,110 L270,80 L270,150 Z" fill="#cfd8dc"/>
+  
+  <!-- 눈 덮힌 나무들 -->
+  <path d="M70,150 L70,130" stroke="#5d4037" stroke-width="3"/>
+  <path d="M60,130 C60,120 70,110 80,120 C90,110 100,120 100,130 Z" fill="#4caf50"/>
+  <path d="M60,130 C60,125 70,115 80,125 C90,115 100,125 100,130" stroke="#fff" stroke-width="3" fill="none"/>
+  
+  <path d="M100,150 L100,135" stroke="#5d4037" stroke-width="2"/>
+  <path d="M95,135 C95,130 100,125 105,130 C110,125 115,130 115,135 Z" fill="#388e3c"/>
+  <path d="M95,135 C95,132 100,127 105,132 C110,127 115,132 115,135" stroke="#fff" stroke-width="2" fill="none"/>
+  
+  <path d="M130,150 L130,125" stroke="#5d4037" stroke-width="4"/>
+  <path d="M115,125 C115,115 130,100 145,115 C160,100 175,115 175,125 Z" fill="#2e7d32"/>
+  <path d="M115,125 C115,118 130,103 145,118 C160,103 175,118 175,125" stroke="#fff" stroke-width="4" fill="none"/>
+  
+  <!-- 눈송이들 -->
+  <g transform="translate(60, 100)">
+    <path d="M0,-5 L0,5 M-5,0 L5,0 M-3.5,-3.5 L3.5,3.5 M-3.5,3.5 L3.5,-3.5" stroke="#bbdefb" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(90, 80)">
+    <path d="M0,-5 L0,5 M-5,0 L5,0 M-3.5,-3.5 L3.5,3.5 M-3.5,3.5 L3.5,-3.5" stroke="#bbdefb" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(120, 110)">
+    <path d="M0,-5 L0,5 M-5,0 L5,0 M-3.5,-3.5 L3.5,3.5 M-3.5,3.5 L3.5,-3.5" stroke="#bbdefb" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(160, 90)">
+    <path d="M0,-5 L0,5 M-5,0 L5,0 M-3.5,-3.5 L3.5,3.5 M-3.5,3.5 L3.5,-3.5" stroke="#bbdefb" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(200, 100)">
+    <path d="M0,-5 L0,5 M-5,0 L5,0 M-3.5,-3.5 L3.5,3.5 M-3.5,3.5 L3.5,-3.5" stroke="#bbdefb" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(230, 80)">
+    <path d="M0,-5 L0,5 M-5,0 L5,0 M-3.5,-3.5 L3.5,3.5 M-3.5,3.5 L3.5,-3.5" stroke="#bbdefb" stroke-width="1"/>
+  </g>
+  
+  <!-- 화롯가 모임 -->
+  <g transform="translate(220, 130)">
+    <circle cx="0" cy="0" r="15" fill="#e65100" opacity="0.3"/>
+    <circle cx="0" cy="0" r="10" fill="#e65100" opacity="0.5"/>
+    <circle cx="0" cy="0" r="5" fill="#e65100"/>
+    
+    <!-- 사람들 주변 모임 -->
+    <circle cx="-10" cy="-10" r="5" fill="#5c6bc0"/>
+    <circle cx="10" cy="-10" r="5" fill="#ec407a"/>
+    <circle cx="-15" cy="0" r="5" fill="#26a69a"/>
+    <circle cx="15" cy="0" r="5" fill="#ffb74d"/>
+    <circle cx="-10" cy="10" r="5" fill="#7e57c2"/>
+    <circle cx="10" cy="10" r="5" fill="#66bb6a"/>
+  </g>
+  
+  <!-- 트래킹하는 사람 -->
+  <g transform="translate(80, 110)">
+    <circle cx="0" cy="0" r="6" fill="#3f51b5"/>
+    <path d="M0,6 L0,15" stroke="#3f51b5" stroke-width="2"/>
+    <path d="M0,10 L-5,20" stroke="#3f51b5" stroke-width="2"/>
+    <path d="M0,10 L5,20" stroke="#3f51b5" stroke-width="2"/>
+    <path d="M-7,5 L7,5" stroke="#3f51b5" stroke-width="2"/>
+    <path d="M0,0 L-5,-5" stroke="#3f51b5" stroke-width="1"/>
+    <path d="M-5,-5 L-10,0" stroke="#3f51b5" stroke-width="1"/>
+  </g>
+  
+  <!-- 황룡등 -->
+  <g transform="translate(160, 50)">
+    <path d="M-10,0 C-5,-10 5,-10 10,0 C15,10 20,15 10,20 C0,15 5,10 10,0" stroke="#ffc107" stroke-width="2" fill="#ffecb3" fill-opacity="0.7"/>
+    <line x1="0" y1="20" x2="0" y2="30" stroke="#a1887f" stroke-width="1"/>
+  </g>
+  
+  <!-- 설날 해돋이 -->
+  <g transform="translate(50, 50)">
+    <circle cx="0" cy="0" r="15" fill="#ff9800"/>
+    <circle cx="0" cy="0" r="20" fill="#ff9800" opacity="0.3"/>
+    <path d="M-25,0 L-15,0 M25,0 L15,0 M0,-25 L0,-15 M0,25 L0,15 M-18,-18 L-10,-10 M18,-18 L10,-10 M-18,18 L-10,10 M18,18 L10,10" stroke="#ffb74d" stroke-width="2"/>
+  </g>
+  
+  <!-- 겨울 글자 -->
+  <text x="150" y="180" text-anchor="middle" font-size="24" font-weight="bold" fill="#3f51b5">겨울 시즌 프로그램</text>
+</svg>

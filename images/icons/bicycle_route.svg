@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="150" fill="#f8f9fa" rx="5" ry="5"/>
+  
+  <path d="M30,120 L270,120" stroke="#4169E1" stroke-width="8" stroke-linecap="round"/>
+  <path d="M30,120 L270,120" stroke="#fff" stroke-width="2" stroke-dasharray="10,10" stroke-linecap="round"/>
+  
+  <!-- 자전거 1 -->
+  <circle cx="80" cy="120" r="20" fill="none" stroke="#333" stroke-width="3"/>
+  <circle cx="140" cy="120" r="20" fill="none" stroke="#333" stroke-width="3"/>
+  <path d="M80,120 L110,80 L140,120 M110,80 L100,80 M110,80 L110,100" stroke="#333" stroke-width="3" fill="none"/>
+  
+  <!-- 자전거 2 -->
+  <circle cx="200" cy="120" r="20" fill="none" stroke="#333" stroke-width="3"/>
+  <circle cx="260" cy="120" r="20" fill="none" stroke="#333" stroke-width="3"/>
+  <path d="M200,120 L230,80 L260,120 M230,80 L220,80 M230,80 L230,100" stroke="#333" stroke-width="3" fill="none"/>
+  
+  <text x="150" y="50" text-anchor="middle" font-size="14" fill="#333">자전거 도로 연계</text>
+</svg>
