@@ -1,60 +1,204 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="550" height="250" xmlns="http://www.w3.org/2000/svg">
-  <rect width="550" height="250" fill="#f0f8ff" />
+  <!-- 정의 -->
+  <defs>
+    <!-- 그라데이션 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f8ff" />
+      <stop offset="100%" stop-color="#e6f2ff" />
+    </linearGradient>
+    
+    <linearGradient id="jangseongGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffdd44" />
+      <stop offset="100%" stop-color="#ffbb00" />
+    </linearGradient>
+    
+    <linearGradient id="gwangjuGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f8fba" />
+      <stop offset="100%" stop-color="#3a6a8a" />
+    </linearGradient>
+    
+    <linearGradient id="damyangGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#77aa44" />
+      <stop offset="100%" stop-color="#558822" />
+    </linearGradient>
+    
+    <linearGradient id="najuGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dd6655" />
+      <stop offset="100%" stop-color="#bb4433" />
+    </linearGradient>
+    
+    <linearGradient id="hwasunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bb66bb" />
+      <stop offset="100%" stop-color="#993399" />
+    </linearGradient>
+    
+    <!-- 필터 -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#00000033" />
+    </filter>
+    
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+      <feFlood flood-color="#ffcc00" flood-opacity="0.5" result="color" />
+      <feComposite in="color" in2="blur" operator="in" result="shadow" />
+      <feComposite in="SourceGraphic" in2="shadow" operator="over" />
+    </filter>
+    
+    <!-- 패턴 -->
+    <pattern id="mapPattern" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect width="50" height="50" fill="#f5f5f5" />
+      <path d="M0,0 L50,50 M50,0 L0,50" stroke="#eeeeee" stroke-width="1" />
+    </pattern>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="550" height="250" fill="url(#bgGradient)" />
+  
+  <!-- 제목 배경 -->
+  <rect x="100" y="15" width="350" height="40" rx="10" fill="#ffffff" opacity="0.8" filter="url(#shadow)" />
   
   <!-- 제목 -->
   <text x="275" y="40" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold" fill="#333">지역 연계 협력 프로그램</text>
   
   <!-- 지도 배경 -->
-  <rect x="75" y="60" width="400" height="150" rx="10" fill="#eee" stroke="#ccc" stroke-width="1" />
+  <rect x="75" y="60" width="400" height="150" rx="10" fill="url(#mapPattern)" stroke="#ccc" stroke-width="1" filter="url(#shadow)" />
   
-  <!-- 장성군 -->
-  <circle cx="275" cy="140" r="40" fill="#ffcc00" opacity="0.7" />
-  <text x="275" y="145" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">장성군</text>
+  <!-- 도로 네트워크 -->
+  <!--path d="M275,140 L200,190 L150,220 M275,140 L350,100 L400,80 M275,140 L200,100 L150,70 M275,140 L350,180 L400,200" 
+        stroke="#dddddd" stroke-width="6" stroke-linecap="round" opacity="0.5" /-->
   
-  <!-- 광주 -->
-  <circle cx="200" cy="190" r="30" fill="#4477aa" opacity="0.7" />
-  <text x="200" y="195" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">광주</text>
+  <!-- 물 특징 -->
+  <path d="M220,160 C230,158 240,162 250,160 C260,158 270,162 280,160 C290,158 300,162 310,160 C320,158 330,162 340,160" 
+        stroke="#99ccff" stroke-width="4" fill="none" opacity="0.6">
+    <animate attributeName="d" values="
+      M220,160 C230,158 240,162 250,160 C260,158 270,162 280,160 C290,158 300,162 310,160 C320,158 330,162 340,160;
+      M220,162 C230,160 240,164 250,162 C260,160 270,164 280,162 C290,160 300,164 310,162 C320,160 330,164 340,162;
+      M220,160 C230,158 240,162 250,160 C260,158 270,162 280,160 C290,158 300,162 310,160 C320,158 330,162 340,160"
+      dur="5s" repeatCount="indefinite" />
+  </path>
   
-  <!-- 담양 -->
-  <circle cx="350" cy="100" r="25" fill="#669933" opacity="0.7" />
-  <text x="350" y="105" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">담양</text>
+  <!-- 연결선 (개선된) -->
+  <g>
+    <path d="M275,140 L200,190" stroke="#4f8fba" stroke-width="3" stroke-dasharray="5,3" opacity="0.8">
+      <animate attributeName="stroke-dashoffset" values="8;0" dur="30s" repeatCount="indefinite" />
+    </path>
+    
+    <path d="M275,140 L350,100" stroke="#77aa44" stroke-width="3" stroke-dasharray="5,3" opacity="0.8">
+      <animate attributeName="stroke-dashoffset" values="8;0" dur="20s" repeatCount="indefinite" />
+    </path>
+    
+    <path d="M275,140 L200,100" stroke="#dd6655" stroke-width="3" stroke-dasharray="5,3" opacity="0.8">
+      <animate attributeName="stroke-dashoffset" values="8;0" dur="25s" repeatCount="indefinite" />
+    </path>
+    
+    <path d="M275,140 L350,180" stroke="#bb66bb" stroke-width="3" stroke-dasharray="5,3" opacity="0.8">
+      <animate attributeName="stroke-dashoffset" values="8;0" dur="15s" repeatCount="indefinite" />
+    </path>
+  </g>
   
-  <!-- 나주 -->
-  <circle cx="200" cy="100" r="20" fill="#cc5544" opacity="0.7" />
-  <text x="200" y="105" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#333">나주</text>
+  <!-- 방향 화살표 -->
+  <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" 
+          markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#555" />
+  </marker>
   
-  <!-- 화순 -->
-  <circle cx="350" cy="180" r="20" fill="#aa44aa" opacity="0.7" />
-  <text x="350" y="185" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#333">화순</text>
+  <!-- 장성군 (개선된) -->
+  <g>
+    <circle cx="275" cy="140" r="40" fill="url(#jangseongGradient)" opacity="0.9" filter="url(#glow)">
+      <animate attributeName="r" values="40;42;40" dur="3s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- 황룡 아이콘 -->
+    <!--path d="M260,130 C265,125 275,125 280,130 C285,135 290,140 280,145 C270,140 275,135 260,130 Z" 
+          fill="#fff" stroke="#e6a500" stroke-width="1" opacity="0.8" /-->
+    
+    <text x="275" y="145" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">장성군</text>
+  </g>
   
-  <!-- 연결선 -->
-  <path d="M275,140 L200,190" stroke="#333" stroke-width="2" stroke-dasharray="5,3" />
-  <path d="M275,140 L350,100" stroke="#333" stroke-width="2" stroke-dasharray="5,3" />
-  <path d="M275,140 L200,100" stroke="#333" stroke-width="2" stroke-dasharray="5,3" />
-  <path d="M275,140 L350,180" stroke="#333" stroke-width="2" stroke-dasharray="5,3" />
+  <!-- 광주 (개선된) -->
+  <g>
+    <circle cx="200" cy="190" r="30" fill="url(#gwangjuGradient)" opacity="0.9" filter="url(#shadow)" />
+    
+    <!-- 빌딩 아이콘 -->
+    <!--rect x="190" y="180" width="5" height="15" fill="#fff" opacity="0.8" />
+    <rect x="197" y="175" width="5" height="20" fill="#fff" opacity="0.8" />
+    <rect x="204" y="178" width="5" height="17" fill="#fff" opacity="0.8" /-->
+    
+    <text x="200" y="195" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#fff">광주</text>
+  </g>
   
-  <!-- 연계 프로그램 타이틀 -->
-  <text x="120" y="90" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">호남 문화축 여행</text>
-  <path d="M120,95 L150,120" stroke="#333" stroke-width="1" />
+  <!-- 담양 (개선된) -->
+  <g>
+    <circle cx="350" cy="100" r="25" fill="url(#damyangGradient)" opacity="0.9" filter="url(#shadow)" />
+    
+    <!-- 대나무 아이콘 -->
+    <!--line x1="345" y1="90" x2="345" y2="105" stroke="#fff" stroke-width="2" opacity="0.8" />
+    <line x1="350" y1="88" x2="350" y2="103" stroke="#fff" stroke-width="2" opacity="0.8" />
+    <line x1="355" y1="92" x2="355" y2="107" stroke="#fff" stroke-width="2" opacity="0.8" /-->
+    
+    <text x="350" y="105" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#fff">담양</text>
+  </g>
   
-  <text x="430" y="90" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">황금길 프로젝트</text>
-  <path d="M430,95 L400,120" stroke="#333" stroke-width="1" />
+  <!-- 나주 (개선된) -->
+  <g>
+    <circle cx="200" cy="100" r="20" fill="url(#najuGradient)" opacity="0.9" filter="url(#shadow)" />
+    
+    <!-- 배 아이콘 -->
+    <!--path d="M195,95 C195,90 205,90 205,95 L205,100 C205,105 195,105 195,100 Z" fill="#fff" opacity="0.8" />
+    <line x1="200" y1="95" x2="200" y2="90" stroke="#fff" stroke-width="1" opacity="0.8" /-->
+    
+    <text x="200" y="105" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold" fill="#fff">나주</text>
+  </g>
   
-  <text x="120" y="200" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">백제문화권 광역벨트</text>
-  <path d="M120,195 L150,170" stroke="#333" stroke-width="1" />
+  <!-- 화순 (개선된) -->
+  <g>
+    <circle cx="350" cy="180" r="20" fill="url(#hwasunGradient)" opacity="0.9" filter="url(#shadow)" />
+    
+    <!-- 산 아이콘 -->
+    <!--path d="M340,180 L345,172 L350,178 L355,170 L360,180" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.8" /-->
+    
+    <text x="350" y="185" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold" fill="#fff">화순</text>
+  </g>
   
-  <!-- 범례 -->
-  <rect x="75" y="225" width="400" height="2" fill="#ccc" />
-  <circle cx="125" cy="235" r="5" fill="#ffcc00" />
-  <text x="135" y="239" font-family="Arial, sans-serif" font-size="10" fill="#333">중심 지역</text>
+  <!-- 연계 프로그램 박스 -->
+  <g>
+    <!-- 호남 문화축 여행 -->
+    <g transform="translate(120, 90)">
+      <rect x="-50" y="-15" width="100" height="30" rx="5" fill="#ffffff" opacity="0.9" filter="url(#shadow)" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">호남 문화축 여행</text>
+      <!--path d="M0,15 L30,30" stroke="#4f8fba" stroke-width="1.5" stroke-dasharray="3,2">
+        <animate attributeName="stroke-dashoffset" values="5;0" dur="10s" repeatCount="indefinite" />
+      </path-->
+    </g>
+    
+    <!-- 황금길 프로젝트 -->
+    <g transform="translate(430, 90)">
+      <rect x="-50" y="-15" width="100" height="30" rx="5" fill="#ffffff" opacity="0.9" filter="url(#shadow)" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">황금길 프로젝트</text>
+      <!--path d="M0,15 L-40,30" stroke="#77aa44" stroke-width="1.5" stroke-dasharray="3,2">
+        <animate attributeName="stroke-dashoffset" values="5;0" dur="10s" repeatCount="indefinite" />
+      </path-->
+    </g>
+    
+    <!-- 백제문화권 광역벨트 -->
+    <g transform="translate(120, 200)">
+      <rect x="-65" y="-15" width="130" height="30" rx="5" fill="#ffffff" opacity="0.9" filter="url(#shadow)" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">백제문화권 광역벨트</text>
+      <!--path d="M0,-15 L30,-40" stroke="#dd6655" stroke-width="1.5" stroke-dasharray="3,2">
+        <animate attributeName="stroke-dashoffset" values="5;0" dur="10s" repeatCount="indefinite" />
+      </path-->
+    </g>
+    
+    <!-- 생태관광 협력망 (추가) -->
+    <g transform="translate(430, 200)">
+      <rect x="-50" y="-15" width="100" height="30" rx="5" fill="#ffffff" opacity="0.9" filter="url(#shadow)" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">생태관광 협력망</text>
+      <!--path d="M0,-15 L-40,-40" stroke="#bb66bb" stroke-width="1.5" stroke-dasharray="3,2">
+        <animate attributeName="stroke-dashoffset" values="5;0" dur="10s" repeatCount="indefinite" />
+      </path-->
+    </g>
+  </g>
   
-  <circle cx="225" cy="235" r="5" fill="#4477aa" />
-  <text x="235" y="239" font-family="Arial, sans-serif" font-size="10" fill="#333">주요 연계 지역</text>
   
-  <circle cx="325" cy="235" r="5" fill="#669933" />
-  <text x="335" y="239" font-family="Arial, sans-serif" font-size="10" fill="#333">테마 연계 지역</text>
-  
-  <line x1="400" y1="230" x2="410" y2="240" stroke="#333" stroke-width="2" stroke-dasharray="5,3" />
-  <text x="420" y="239" font-family="Arial, sans-serif" font-size="10" fill="#333">연계 라인</text>
 </svg>
