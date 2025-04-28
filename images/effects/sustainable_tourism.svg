@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
-  <rect width="600" height="400" fill="#f0f8ff" />
+<svg width="600" height="420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="420" fill="#f0f8ff" />
   
   <!-- 배경 요소 - 하늘/하늘선 -->
-  <path d="M0,250 L600,250 L600,400 L0,400 Z" fill="#e1f5fe" />
+  <path d="M0,250 L600,250 L600,420 L0,420 Z" fill="#e1f5fe" />
   
   <!-- 중앙 원형 다이어그램 -->
   <g transform="translate(300, 200)">
@@ -100,12 +100,12 @@
   </g>
   
   <!-- 제목 -->
-  <text x="300" y="50" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold" fill="#333">지속가능한 관광 인프라 구축</text>
+  <text x="300" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold" fill="#333">지속가능한 관광 인프라 구축</text>
   
   <!-- 부제목 -->
-  <text x="300" y="80" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#666">스토리로드를 통한 환경적, 사회적, 경제적 지속가능성 확보</text>
+  <!--text x="300" y="80" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#666">스토리로드를 통한 환경적, 사회적, 경제적 지속가능성 확보</text-->
   
   <!-- 하단 정보 -->
-  <rect x="150" y="350" width="300" height="30" rx="5" fill="#ffffff" stroke="#0288d1" stroke-width="2" />
-  <text x="300" y="370" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">장기적 발전을 위한 관광 생태계 구축</text>
+  <rect x="150" y="375" width="300" height="30" rx="5" fill="#ffffff" stroke="#0288d1" stroke-width="2" />
+  <text x="300" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">장기적 발전을 위한 관광 생태계 구축</text>
 </svg>
