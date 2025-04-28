@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- 배경 - 장성군 지도 윤곽 -->
+  <rect width="800" height="600" fill="#f5f5f5" />
+  <path d="M200,150 L300,100 L400,80 L500,120 L600,180 L650,300 L600,400 L500,480 L400,500 L300,450 L200,400 L150,300 Z" fill="#f9f9e0" stroke="#ccc" stroke-width="2" />
+  
+  <!-- 제목 -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">장성 5대 스토리라인 지도</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" font-style="italic" text-anchor="middle" fill="#666">황룡의 숨결이 흐르는 다섯 가지 이야기길</text>
+  
+  <!-- 주요 도로 패턴 -->
+  <path d="M200,300 L400,300 L600,300" stroke="#ccc" stroke-width="3" fill="none" />
+  <path d="M400,80 L400,500" stroke="#ccc" stroke-width="3" fill="none" />
+  <path d="M250,180 L550,400" stroke="#ccc" stroke-width="2" fill="none" />
+  <path d="M250,400 L550,200" stroke="#ccc" stroke-width="2" fill="none" />
+  
+  <!-- 황룡강 -->
+  <path d="M150,300 C250,280 300,340 400,310 S550,260 650,320" stroke="#f8d14c" stroke-width="12" fill="none" stroke-linecap="round" />
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#d4a016">황룡강</text>
+  
+  <!-- 스토리로드 1: 황룡의 전설 로드 -->
+  <path d="M450,280 C500,260 540,200 570,150" stroke="#ffcc00" stroke-width="5" fill="none" stroke-dasharray="10,4" />
+  <!-- 스토리로드 1 관광지 -->
+  <circle cx="450" cy="280" r="8" fill="#ffcc00" stroke="#d4a016" stroke-width="2" />
+  <text x="480" y="280" font-family="Arial, sans-serif" font-size="11" fill="#333">황룡강 생태공원</text>
+  
+  <circle cx="520" cy="220" r="8" fill="#ffcc00" stroke="#d4a016" stroke-width="2" />
+  <text x="550" y="220" font-family="Arial, sans-serif" font-size="11" fill="#333">황룡 전설 포토존</text>
+  
+  <circle cx="570" cy="150" r="8" fill="#ffcc00" stroke="#d4a016" stroke-width="2" />
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="11" fill="#333">황룡 전적지</text>
+  
+  <!-- 스토리로드 2: 선비의 길 -->
+  <path d="M400,320 C350,300 300,250 250,180" stroke="#4c6ef5" stroke-width="5" fill="none" stroke-dasharray="10,4" />
+  <!-- 스토리로드 2 관광지 -->
+  <circle cx="250" cy="180" r="8" fill="#4c6ef5" stroke="#3b5bdb" stroke-width="2" />
+  <text x="280" y="180" font-family="Arial, sans-serif" font-size="11" fill="#333">필암서원</text>
+  
+  <circle cx="280" cy="220" r="8" fill="#4c6ef5" stroke="#3b5bdb" stroke-width="2" />
+  <text x="310" y="220" font-family="Arial, sans-serif" font-size="11" fill="#333">하서 유적지</text>
+  
+  <circle cx="350" cy="250" r="8" fill="#4c6ef5" stroke="#3b5bdb" stroke-width="2" />
+  <text x="380" y="250" font-family="Arial, sans-serif" font-size="11" fill="#333">장성향교</text>
+  
+  <!-- 스토리로드 3: 홍길동 영웅담 로드 -->
+  <path d="M400,350 C380,380 350,420 300,450" stroke="#51cf66" stroke-width="5" fill="none" stroke-dasharray="10,4" />
+  <!-- 스토리로드 3 관광지 -->
+  <circle cx="300" cy="450" r="8" fill="#51cf66" stroke="#40c057" stroke-width="2" />
+  <text x="330" y="450" font-family="Arial, sans-serif" font-size="11" fill="#333">홍길동 테마파크</text>
+  
+  <circle cx="350" cy="420" r="8" fill="#51cf66" stroke="#40c057" stroke-width="2" />
+  <text x="380" y="420" font-family="Arial, sans-serif" font-size="11" fill="#333">활빈당 비밀요새</text>
+  
+  <circle cx="370" cy="380" r="8" fill="#51cf66" stroke="#40c057" stroke-width="2" />
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="11" fill="#333">황룡면 매실마을</text>
+  
+  <!-- 스토리로드 4: 불교문화 순례길 -->
+  <path d="M420,350 C450,380 500,400 570,410" stroke="#ff6b6b" stroke-width="5" fill="none" stroke-dasharray="10,4" />
+  <!-- 스토리로드 4 관광지 -->
+  <circle cx="570" cy="410" r="8" fill="#ff6b6b" stroke="#fa5252" stroke-width="2" />
+  <text x="600" y="410" font-family="Arial, sans-serif" font-size="11" fill="#333">백양사</text>
+  
+  <circle cx="520" cy="400" r="8" fill="#ff6b6b" stroke="#fa5252" stroke-width="2" />
+  <text x="550" y="400" font-family="Arial, sans-serif" font-size="11" fill="#333">비자나무 숲길</text>
+  
+  <circle cx="470" cy="380" r="8" fill="#ff6b6b" stroke="#fa5252" stroke-width="2" />
+  <text x="500" y="380" font-family="Arial, sans-serif" font-size="11" fill="#333">청류암</text>
+  
+  <!-- 스토리로드 5: 장성 맛과 멋 여행길 -->
+  <path d="M400,350 C430,420 450,460 450,490" stroke="#be4bdb" stroke-width="5" fill="none" stroke-dasharray="10,4" />
+  <!-- 스토리로드 5 관광지 -->
+  <circle cx="450" cy="490" r="8" fill="#be4bdb" stroke="#ae3ec9" stroke-width="2" />
+  <text x="480" y="490" font-family="Arial, sans-serif" font-size="11" fill="#333">장성 농업박물관</text>
+  
+  <circle cx="450" cy="460" r="8" fill="#be4bdb" stroke="#ae3ec9" stroke-width="2" />
+  <text x="480" y="460" font-family="Arial, sans-serif" font-size="11" fill="#333">사과농장 체험장</text>
+  
+  <circle cx="430" cy="420" r="8" fill="#be4bdb" stroke="#ae3ec9" stroke-width="2" />
+  <text x="460" y="420" font-family="Arial, sans-serif" font-size="11" fill="#333">장성시장</text>
+  
+  <!-- 중심 지점: 황룡 스토리 허브 -->
+  <circle cx="400" cy="350" r="15" fill="#ffdd33" stroke="#e6c300" stroke-width="3" />
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#333">황룡 스토리 허브</text>
+  
+  <!-- 범례 -->
+  <rect x="580" y="490" width="200" height="95" fill="white" stroke="#ccc" stroke-width="1" rx="5" ry="5" />
+  <text x="680" y="510" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">5대 테마 스토리로드</text>
+  
+  <!-- 범례 항목들 -->
+  <line x1="590" y1="530" x2="620" y2="530" stroke="#ffcc00" stroke-width="3" stroke-dasharray="6,2" />
+  <text x="700" y="534" font-family="Arial, sans-serif" font-size="10" fill="#333">황룡의 전설 로드</text>
+  
+  <line x1="590" y1="550" x2="620" y2="550" stroke="#4c6ef5" stroke-width="3" stroke-dasharray="6,2" />
+  <text x="700" y="554" font-family="Arial, sans-serif" font-size="10" fill="#333">선비의 길</text>
+  
+  <line x1="590" y1="570" x2="620" y2="570" stroke="#51cf66" stroke-width="3" stroke-dasharray="6,2" />
+  <text x="700" y="574" font-family="Arial, sans-serif" font-size="10" fill="#333">홍길동 영웅담 로드</text>
+  
+  <line x1="650" y1="530" x2="680" y2="530" stroke="#ff6b6b" stroke-width="3" stroke-dasharray="6,2" />
+  <text x="760" y="534" font-family="Arial, sans-serif" font-size="10" fill="#333">불교문화 순례길</text>
+  
+  <line x1="650" y1="550" x2="680" y2="550" stroke="#be4bdb" stroke-width="3" stroke-dasharray="6,2" />
+  <text x="760" y="554" font-family="Arial, sans-serif" font-size="10" fill="#333">맛과 멋 여행길</text>
+  
+  <!-- 방위표시 -->
+  <circle cx="80" cy="80" r="30" fill="white" stroke="#ccc" stroke-width="1" />
+  <line x1="80" y1="50" x2="80" y2="110" stroke="#666" stroke-width="1" />
+  <line x1="50" y1="80" x2="110" y2="80" stroke="#666" stroke-width="1" />
+  <text x="80" y="55" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">N</text>
+  <text x="105" y="84" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">E</text>
+  <text x="80" y="110" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">S</text>
+  <text x="55" y="84" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">W</text>
+  
+  <!-- 주요 면/읍 표시 -->
+  <text x="250" cy="130" font-family="Arial, sans-serif" font-size="10" fill="#666">북하면</text>
+  <text x="450" cy="120" font-family="Arial, sans-serif" font-size="10" fill="#666">북일면</text>
+  <text x="550" cy="250" font-family="Arial, sans-serif" font-size="10" fill="#666">진원면</text>
+  <text x="600" cy="350" font-family="Arial, sans-serif" font-size="10" fill="#666">남면</text>
+  <text x="200" cy="250" font-family="Arial, sans-serif" font-size="10" fill="#666">황룡면</text>
+  <text x="350" cy="330" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#666">장성읍</text>
+</svg>
