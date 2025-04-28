@@ -53,59 +53,62 @@
   </g>
   
   <!-- 교육과정 단계 (위쪽) -->
-  <g transform="translate(150, 80)">
+  <g transform="translate(150, 50)">
     <rect x="-60" y="-30" width="120" height="60" rx="10" fill="#3498db" opacity="0.8"/>
     <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="bold" fill="#fff">기본과정</text>
     <text x="0" y="20" text-anchor="middle" dominant-baseline="middle" font-size="12" fill="#fff">30시간</text>
   </g>
   
-  <g transform="translate(300, 80)">
+  <g transform="translate(300, 50)">
     <rect x="-60" y="-30" width="120" height="60" rx="10" fill="#2980b9" opacity="0.8"/>
     <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="bold" fill="#fff">심화과정</text>
     <text x="0" y="20" text-anchor="middle" dominant-baseline="middle" font-size="12" fill="#fff">50시간</text>
   </g>
   
-  <g transform="translate(450, 80)">
+  <g transform="translate(450, 50)">
     <rect x="-60" y="-30" width="120" height="60" rx="10" fill="#1f618d" opacity="0.8"/>
     <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="bold" fill="#fff">전문과정</text>
     <text x="0" y="20" text-anchor="middle" dominant-baseline="middle" font-size="12" fill="#fff">100시간</text>
   </g>
   
   <!-- 화살표 -->
+
+  <g transform="translate(0, -30)">
   <line x1="210" y1="80" x2="240" y2="80" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,3"/>
   <line x1="360" y1="80" x2="390" y2="80" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,3"/>
   <polygon points="240,80 235,75 235,85" fill="#2c3e50"/>
   <polygon points="390,80 385,75 385,85" fill="#2c3e50"/>
-  
+  </g>
+
   <!-- 활동 요소들 (아래쪽) -->
   <g transform="translate(150, 280)">
-    <circle cx="0" cy="0" r="30" fill="#e74c3c" opacity="0.8"/>
+    <circle cx="0" cy="0" r="35" fill="#e74c3c" opacity="0.8"/>
     <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="bold" fill="#fff">역사</text>
     <text x="0" y="15" text-anchor="middle" dominant-baseline="middle" font-size="10" fill="#fff">장성의 역사</text>
   </g>
   
   <g transform="translate(250, 280)">
-    <circle cx="0" cy="0" r="30" fill="#e67e22" opacity="0.8"/>
+    <circle cx="0" cy="0" r="35" fill="#e67e22" opacity="0.8"/>
     <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="bold" fill="#fff">문화</text>
     <text x="0" y="15" text-anchor="middle" dominant-baseline="middle" font-size="10" fill="#fff">지역 문화</text>
   </g>
   
   <g transform="translate(350, 280)">
-    <circle cx="0" cy="0" r="30" fill="#f1c40f" opacity="0.8"/>
+    <circle cx="0" cy="0" r="35" fill="#f1c40f" opacity="0.8"/>
     <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="bold" fill="#fff">설화</text>
     <text x="0" y="15" text-anchor="middle" dominant-baseline="middle" font-size="10" fill="#fff">지역 이야기</text>
   </g>
   
   <g transform="translate(450, 280)">
-    <circle cx="0" cy="0" r="30" fill="#2ecc71" opacity="0.8"/>
+    <circle cx="0" cy="0" r="35" fill="#2ecc71" opacity="0.8"/>
     <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="bold" fill="#fff">체험</text>
     <text x="0" y="15" text-anchor="middle" dominant-baseline="middle" font-size="10" fill="#fff">체험 활동</text>
   </g>
   
   <!-- 연결선 -->
-  <line x1="150" y1="110" x2="260" y2="175" stroke="#2c3e50" stroke-width="1" stroke-dasharray="3,3"/>
+  <!--line x1="150" y1="110" x2="260" y2="175" stroke="#2c3e50" stroke-width="1" stroke-dasharray="3,3"/>
   <line x1="300" y1="110" x2="280" y2="155" stroke="#2c3e50" stroke-width="1" stroke-dasharray="3,3"/>
-  <line x1="450" y1="110" x2="340" y2="175" stroke="#2c3e50" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="450" y1="110" x2="340" y2="175" stroke="#2c3e50" stroke-width="1" stroke-dasharray="3,3"/-->
   
   <line x1="150" y1="250" x2="270" y2="200" stroke="#2c3e50" stroke-width="1" stroke-dasharray="3,3"/>
   <line x1="250" y1="250" x2="280" y2="200" stroke="#2c3e50" stroke-width="1" stroke-dasharray="3,3"/>
@@ -113,5 +116,5 @@
   <line x1="450" y1="250" x2="330" y2="200" stroke="#2c3e50" stroke-width="1" stroke-dasharray="3,3"/>
   
   <!-- 타이틀 -->
-  <text x="300" y="330" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">장성 스토리텔러 양성 프로젝트</text>
+  <text x="300" y="345" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">장성 스토리텔러 양성 프로젝트</text>
 </svg>
