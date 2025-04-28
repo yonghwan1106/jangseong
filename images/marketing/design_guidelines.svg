@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f5f5f5" />
+  
+  <!-- 디자인 가이드라인 그래픽 -->
+  <rect x="40" y="40" width="220" height="50" rx="5" fill="#ffcc00" />
+  <rect x="40" y="100" width="100" height="50" rx="5" fill="#4477aa" />
+  <rect x="160" y="100" width="100" height="50" rx="5" fill="#669933" />
+  
+  <!-- 타이포그래피 예시 -->
+  <text x="150" y="70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Typography</text>
+  
+  <!-- 색상 팔레트 이름 -->
+  <text x="90" y="130" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#fff">Colors</text>
+  <text x="210" y="130" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#fff">Patterns</text>
+  
+  <!-- 디자인 가이드라인 제목 -->
+  <rect x="30" y="170" width="240" height="20" rx="3" fill="#333" />
+  <text x="150" y="185" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#fff">장성 스토리로드 디자인 시스템</text>
+</svg>

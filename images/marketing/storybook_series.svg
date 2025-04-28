@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f8f8f8" />
+  
+  <!-- 첫 번째 책 -->
+  <g transform="translate(60, 60) rotate(-5)">
+    <rect x="-30" y="-40" width="60" height="80" fill="#ffcc00" stroke="#333" stroke-width="1" />
+    <rect x="-25" y="-35" width="50" height="10" fill="#fff" />
+    <text x="0" y="-25" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#333">황룡 이야기</text>
+    <line x1="-20" y1="-10" x2="20" y2="-10" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="-5" x2="15" y2="-5" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="5" x2="10" y2="5" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="10" x2="20" y2="10" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="15" x2="15" y2="15" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="20" x2="20" y2="20" stroke="#333" stroke-width="0.5" />
+  </g>
+  
+  <!-- 두 번째 책 -->
+  <g transform="translate(150, 70)">
+    <rect x="-30" y="-40" width="60" height="80" fill="#4477aa" stroke="#333" stroke-width="1" />
+    <rect x="-25" y="-35" width="50" height="10" fill="#fff" />
+    <text x="0" y="-25" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#333">선비의 길</text>
+    <line x1="-20" y1="-10" x2="20" y2="-10" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="-5" x2="15" y2="-5" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="5" x2="10" y2="5" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="10" x2="20" y2="10" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="15" x2="15" y2="15" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="20" x2="20" y2="20" stroke="#333" stroke-width="0.5" />
+  </g>
+  
+  <!-- 세 번째 책 -->
+  <g transform="translate(230, 55) rotate(5)">
+    <rect x="-30" y="-40" width="60" height="80" fill="#cc5544" stroke="#333" stroke-width="1" />
+    <rect x="-25" y="-35" width="50" height="10" fill="#fff" />
+    <text x="0" y="-25" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#333">홍길동 모험</text>
+    <line x1="-20" y1="-10" x2="20" y2="-10" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="-5" x2="15" y2="-5" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="5" x2="10" y2="5" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="10" x2="20" y2="10" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="15" x2="15" y2="15" stroke="#333" stroke-width="0.5" />
+    <line x1="-20" y1="20" x2="20" y2="20" stroke="#333" stroke-width="0.5" />
+  </g>
+  
+  <!-- 제목 -->
+  <text x="150" y="150" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">장성의 다섯 가지 이야기</text>
+  <text x="150" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">스토리북 시리즈</text>
+</svg>
