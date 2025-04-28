@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테마별 스토리로드 개발  - 장성 스토리로드 프로젝트</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="bg-warning text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4">황룡의 숨결을 따라</h1>
+                    <p class="lead">장성 스토리로드 프로젝트</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <p class="mb-0">『장성의 내일을 함께해, 봄』</p>
+                    <p class="mb-0">2025년 정책제안 공모전</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">메인</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trend-analysis.html">트렌드 분석</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="current-status.html">현황 및 문제점</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            개선방안
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="improvement-plan.html">개요</a></li>
+                            <li><a class="dropdown-item active" href="story-road.html">테마별 스토리로드 개발 </a></li> 
+                            <li><a class="dropdown-item" href="digital-tech.html">디지털 기술 활용</a></li>
+                            <li><a class="dropdown-item" href="participation.html">참여형 프로그램</a></li>
+                            <li><a class="dropdown-item" href="marketing.html">홍보 및 마케팅 전략</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="expected-effects.html">기대효과</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="action-items.html">조치사항</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h2 class="mb-4">테마별 스토리로드 개발</h2>
+        
+        <section id="overview" class="mb-5">
+            <div class="highlight-box mb-4">
+                <p class="lead mb-0">황룡강을 중심축으로 장성의 역사·문화·자연 자원을 5개의 특색 있는 스토리라인으로 연결하여 관광객이 이야기 속으로 몰입하는 체험형 관광로드를 개발합니다.</p>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h3 class="mb-4">테마별 스토리로드 개발 방향</h3>
+                    <p>장성군의 특색 있는 관광자원들은 풍부하지만, 이들을 유기적으로 연결하는 스토리텔링이 부족한 현실입니다. 본 개선방안에서는 황룡강을 중심축으로 5개의 특화된 테마 스토리로드를 개발하고 이를 위한 물리적 인프라를 구축하여 단순한 점(觀點)형 관광이 아닌 선(線)형, 면(面)형 관광으로 발전시키고자 합니다.</p>
+                    
+                    <div class="card border-primary my-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">주요 추진 내용</h5>
+                            <ol class="mb-0">
+                                <li>황룡강을 중심으로 한 5대 스토리라인 구축</li>
+                                <li>스토리로드 물리적 인프라 구축</li>
+                                <li>안내 체계 및 통합 디자인 시스템 개발</li>
+                                <li>스토리텔링 거점 시설 조성</li>
+                                <li>접근성 개선 및 연결 체계 구축</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <img src="images/storyroad_concept.svg" alt="장성 스토리로드 개념도" class="img-fluid rounded shadow">
+                    <p class="text-center text-muted mt-2">장성 스토리로드 통합 개념도</p>
+                </div>
+            </div>
+            
+            <div class="alert alert-warning mt-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-info-circle me-3 fa-2x"></i>
+                    <p class="mb-0">본 페이지에서는 5대 스토리라인과 물리적 인프라 구축 내용을 다루고 있습니다.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="storyroads" class="mb-5">
+            <h3 class="mb-4">1. 5대 스토리라인 구축 </h3>
+            
+            <!-- 황룡의 전설 로드 -->
+            <div class="card mb-5 border-warning">
+                <div class="card-header bg-warning">
+                    <h4 class="mb-0 text-white">① 황룡의 전설 로드</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/hwangryong_river.jpg" class="img-fluid rounded mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h5 class="mb-3">핵심 스토리</h5>
+                                <p>황룡강 이름의 유래인 '황룡(黃龍)이 승천했다'는 전설과 황룡이 상징하는 중앙(中央)과 황제의 의미를 현대적으로 재해석하여 스토리텔링</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded mb-3">
+                                <h5 class="mb-3">주요 코스</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-map-marker-alt text-warning me-2"></i>황룡강 생태공원(출발)</li>
+                                    <li><i class="fas fa-arrow-down text-warning mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-warning me-2"></i>황룡 전설 포토존</li>
+                                    <li><i class="fas fa-arrow-down text-warning mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-warning me-2"></i>황룡강 둔치 꽃길</li>
+                                    <li><i class="fas fa-arrow-down text-warning mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-warning me-2"></i>황룡 전적지(동학농민운동 유적)</li>
+                                    <li><i class="fas fa-arrow-down text-warning mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-warning me-2"></i>황룡 스토리 파빌리온(도착)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded mb-3">
+                                <h5 class="mb-3">특화 포인트</h5>
+                                <ul>
+                                    <li>황룡 전설을 시각화한 대형 황룡 조형물 및 AR 포토존 설치</li>
+                                    <li>1894년 동학농민운동 당시 황룡촌 전투 실감형 복원 영상 제공</li>
+                                    <li>옐로우시티 컨셉과 연계한 노란색 테마 꽃길 및 포토존 조성</li>
+                                    <li>황룡강변 생태 해설 프로그램 운영 (수생 식물, 조류 관찰 등)</li>
+                                </ul>
+                            </div>
+                            <div class="bg-light p-3 rounded">
+                                <h5 class="mb-3">운영 프로그램</h5>
+                                <ul>
+                                    <li>황룡 설화 구연 공연(주말)</li>
+                                    <li>동학농민운동 역사 체험</li>
+                                    <li>황룡강 생태 탐방</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 선비의 길 -->
+            <div class="card mb-5 border-primary">
+                <div class="card-header bg-primary">
+                    <h4 class="mb-0 text-white">② 선비의 길</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/pilam_seowon.jpg" class="img-fluid rounded mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h5 class="mb-3">핵심 스토리</h5>
+                                <p>유네스코 세계유산 필암서원과 하서 김인후의 학문과 절의를 중심으로 장성의 선비정신을 체험하는 여정</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded mb-3">
+                                <h5 class="mb-3">주요 코스</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i>필암서원(출발)</li>
+                                    <li><i class="fas fa-arrow-down text-primary mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i>하서 유적지</li>
+                                    <li><i class="fas fa-arrow-down text-primary mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i>장성향교</li>
+                                    <li><i class="fas fa-arrow-down text-primary mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i>고산서원</li>
+                                    <li><i class="fas fa-arrow-down text-primary mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i>봉암서원</li>
+                                    <li><i class="fas fa-arrow-down text-primary mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i>청백리 전시관(도착)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded mb-3">
+                                <h5 class="mb-3">특화 포인트</h5>
+                                <ul>
+                                    <li>필암서원 내 '하늘에 묻는다(天問)' 체험관 설치 (조선 선비들의 학문 세계 체험)</li>
+                                    <li>하서 김인후의 시와 글이 적힌 '청렴로드' 조성</li>
+                                    <li>QR코드 기반 '선비 문답' 체험 시스템 (유학 관련 퀴즈와 해설)</li>
+                                    <li>전통 의복 체험 및 역사 인물 코스프레 포토존</li>
+                                </ul>
+                            </div>
+                            <div class="bg-light p-3 rounded">
+                                <h5 class="mb-3">운영 프로그램</h5>
+                                <ul>
+                                    <li>선비 예절 체험</li>
+                                    <li>전통 서예 및 한시 창작</li>
+                                    <li>유생복 체험</li>
+                                    <li>서원 스테이(1박 2일 선비 생활 체험)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 홍길동 영웅담 로드 -->
+            <div class="card mb-5 border-danger">
+                <div class="card-header bg-danger">
+                    <h4 class="mb-0 text-white">③ 홍길동 영웅담 로드</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/honggildong_park.jpg" class="img-fluid rounded mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h5 class="mb-3">핵심 스토리</h5>
+                                <p>조선의 영웅 홍길동의 생애와 활약상을 현대적 관점에서 재해석하고 의로움과 도전정신을 체험하는 모험 코스</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded mb-3">
+                                <h5 class="mb-3">주요 코스</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-map-marker-alt text-danger me-2"></i>홍길동 테마파크(출발)</li>
+                                    <li><i class="fas fa-arrow-down text-danger mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-danger me-2"></i>홍길동 생가터</li>
+                                    <li><i class="fas fa-arrow-down text-danger mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-danger me-2"></i>도술 수련장</li>
+                                    <li><i class="fas fa-arrow-down text-danger mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-danger me-2"></i>활빈당 비밀 요새</li>
+                                    <li><i class="fas fa-arrow-down text-danger mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-danger me-2"></i>황룡면 매실마을</li>
+                                    <li><i class="fas fa-arrow-down text-danger mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-danger me-2"></i>황룡강 나루터(도착)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded mb-3">
+                                <h5 class="mb-3">특화 포인트</h5>
+                                <ul>
+                                    <li>'홍길동전' 주요 장면을 재현한 8개 테마 포토존 설치</li>
+                                    <li>실내외 복합형 '활빈당 모험 체험장' 조성 (장애물 코스, 트리클라이밍 등)</li>
+                                    <li>홍길동 캐릭터와 함께하는 AR 방탈출 게임</li>
+                                    <li>홍길동의 무예와 도술을 현대적으로 재해석한 체험 공간</li>
+                                </ul>
+                            </div>
+                            <div class="bg-light p-3 rounded">
+                                <h5 class="mb-3">운영 프로그램</h5>
+                                <ul>
+                                    <li>홍길동 퀘스트(미션 챌린지)</li>
+                                    <li>전통 무예 체험</li>
+                                    <li>나눔 장터</li>
+                                    <li>'현대의 활빈당' 자원봉사 활동</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="storyroads-continued" class="mb-5">
+
+            <!-- 불교문화 순례길 -->
+            <div class="card mb-5 border-success">
+                <div class="card-header bg-success">
+                    <h4 class="mb-0 text-white">④ 불교문화 순례길</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/baekyang_temple.jpg" class="img-fluid rounded mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h5 class="mb-3">핵심 스토리</h5>
+                                <p>천년 고찰 백양사와 내장산의 불교 문화를 체험하고 현대인의 마음 치유와 명상을 경험하는 힐링 코스</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded mb-3">
+                                <h5 class="mb-3">주요 코스</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-map-marker-alt text-success me-2"></i>백양사(출발)</li>
+                                    <li><i class="fas fa-arrow-down text-success mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-success me-2"></i>비자나무 숲길</li>
+                                    <li><i class="fas fa-arrow-down text-success mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-success me-2"></i>소요대사 부도</li>
+                                    <li><i class="fas fa-arrow-down text-success mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-success me-2"></i>청류암</li>
+                                    <li><i class="fas fa-arrow-down text-success mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-success me-2"></i>내장산 숲길</li>
+                                    <li><i class="fas fa-arrow-down text-success mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-success me-2"></i>백학봉 전망대</li>
+                                    <li><i class="fas fa-arrow-down text-success mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-success me-2"></i>백양사 서래루(도착)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded mb-3">
+                                <h5 class="mb-3">특화 포인트</h5>
+                                <ul>
+                                    <li>백양사 창건 설화와 고승들의 이야기를 담은 오디오 가이드 제작</li>
+                                    <li>비자나무 숲에 '명상의 숲' 조성 (소리 울림 공간, 명상 파빌리온)</li>
+                                    <li>계절별 사찰 풍경을 감상할 수 있는 포토 프레임 설치</li>
+                                    <li>소요대사와 환성당 인환 대사의 생애와 사상 스토리텔링</li>
+                                </ul>
+                            </div>
+                            <div class="bg-light p-3 rounded">
+                                <h5 class="mb-3">운영 프로그램</h5>
+                                <ul>
+                                    <li>사찰 음식 체험</li>
+                                    <li>템플스테이</li>
+                                    <li>명상 워크숍</li>
+                                    <li>연등 만들기</li>
+                                    <li>산사음악회(계절별)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 장성 맛과 멋 여행길 -->
+            <div class="card mb-5 border-info">
+                <div class="card-header bg-info">
+                    <h4 class="mb-0 text-white">⑤ 장성 맛과 멋 여행길</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/hwang_market.png" alt=맛과+멋+여행길" class="img-fluid rounded mb-3">
+                            <div class="bg-light p-3 rounded">
+                                <h5 class="mb-3">핵심 스토리</h5>
+                                <p>장성의 대표 특산물과 먹거리를 통해 지역 농업의 역사와 식문화를 체험하는 미식 여행</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded mb-3">
+                                <h5 class="mb-3">주요 코스</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-map-marker-alt text-info me-2"></i>장성 농업박물관(출발)</li>
+                                    <li><i class="fas fa-arrow-down text-info mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-info me-2"></i>사과농장 체험장</li>
+                                    <li><i class="fas fa-arrow-down text-info mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-info me-2"></i>청년농부 마을</li>
+                                    <li><i class="fas fa-arrow-down text-info mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-info me-2"></i>산나물 체험장</li>
+                                    <li><i class="fas fa-arrow-down text-info mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-info me-2"></i>남면 딸기밭</li>
+                                    <li><i class="fas fa-arrow-down text-info mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-info me-2"></i>입암산성 전통주 체험관</li>
+                                    <li><i class="fas fa-arrow-down text-info mx-2"></i></li>
+                                    <li><i class="fas fa-map-marker-alt text-info me-2"></i>장성시장(도착)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded mb-3">
+                                <h5 class="mb-3">특화 포인트</h5>
+                                <ul>
+                                    <li>계절별 특산물 수확 체험장 운영 (사과, 딸기, 산나물, 매실)</li>
+                                    <li>'장성 맛의 역사' 스토리텔링 전시관 조성</li>
+                                    <li>북하면 산나물을 활용한 '산채 요리 교실' 운영</li>
+                                    <li>장성 로컬 푸드 중심의 '맛집 스탬프 투어' 개발</li>
+                                </ul>
+                            </div>
+                            <div class="bg-light p-3 rounded">
+                                <h5 class="mb-3">운영 프로그램</h5>
+                                <ul>
+                                    <li>농산물 수확 체험</li>
+                                    <li>전통 발효 음식 만들기</li>
+                                    <li>장성 특산물 요리 교실</li>
+                                    <li>농가 밥상 체험</li>
+                                    <li>전통주 제조 체험</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="infrastructure" class="mb-5">
+            <h3 class="mb-4">2. 스토리로드 물리적 인프라 구축</h3>
+            
+            <div class="highlight-box mb-4">
+                <p class="lead mb-0">스토리로드의 성공적인 구현을 위해 물리적 인프라를 체계적으로 구축하여 관광객들이 장성의 이야기에 몰입하고 편안하게 여행할 수 있는 환경을 조성합니다.</p>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <img src="images/icons/storyroad_infra.svg" class="img-fluid rounded shadow mb-4" alt="스토리로드 통합 인프라 개념도">
+                    <p class="text-center text-muted">스토리로드 통합 인프라 개념도</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-secondary mb-4">
+                        <div class="card-header bg-secondary text-white">
+                            <h4 class="mb-0">핵심 인프라 요소</h4>
+                        </div>
+                        <div class="card-body">
+                            <ol>
+                                <li><strong>통합 디자인 시스템</strong>: 일관된 시각적 아이덴티티로 스토리로드의 정체성 확립</li>
+                                <li><strong>스토리텔링 거점 시설</strong>: 핵심 이야기를 전달하는 물리적 거점 공간 조성</li>
+                                <li><strong>접근성 및 이동 편의성</strong>: 스토리로드 간 이동 및 안내 체계 개선</li>
+                                <li><strong>디지털-물리적 통합 환경</strong>: 오프라인 인프라와 디지털 콘텐츠의 유기적 연계</li>
+                                <li><strong>지속가능한 친환경 인프라</strong>: 장성의 자연환경과 조화를 이루는 시설 설계</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 통합 디자인 시스템 -->
+            <div class="card mb-5 mt-4">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">① 통합 디자인 시스템 개발 및 적용</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0">통합 아이덴티티</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/icons/identity_icon.svg" class="img-fluid rounded mb-3" alt="황룡의 숨결 로고">
+                                    <ul>
+                                        <li>'황룡의 숨결'을 모티브로 한 로고 및 색채 시스템 개발</li>
+                                        <li>장성군 황룡 전설에서 영감을 받은 시각적 상징 요소 활용</li>
+                                        <li>5개 테마별 구분되는 서브 아이덴티티 구축</li>
+                                        <li>각 스토리로드별 특화된 색상 코드 적용</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0">안내판 체계 구축</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/icons/signage_icon.svg" class="img-fluid rounded mb-3" alt="안내판 시스템">
+                                    <ul>
+                                        <li><strong>주요 거점 종합안내판</strong>: 전체 스토리로드 지도와 개요 (10개소)</li>
+                                        <li><strong>테마별 코스 안내판</strong>: 각 테마 코스의 상세 정보 (각 코스 출발지, 20개소)</li>
+                                        <li><strong>스토리 포인트 안내판</strong>: 각 지점별 스토리텔링 콘텐츠 (100개소)</li>
+                                        <li>다국어 지원 (한국어, 영어, 중국어, 일본어)</li>
+                                        <li>QR코드 연동으로 모바일 앱과 연계</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0">물리적 상징 요소</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/icons/physical_icon.svg" class="img-fluid rounded mb-3" alt="랜드마크 조형물">
+                                    <ul>
+                                        <li><strong>랜드마크 조형물</strong>: 5개 테마별 상징 조형물 설치 (각 코스 시작점)</li>
+                                        <li><strong>웨이파인딩 시스템</strong>: 통일된 디자인의 방향 표지판과 거리 표시</li>
+                                        <li><strong>포토존</strong>: 스토리 주요 장면을 시각화한 특화 포토존 (테마별 3개소)</li>
+                                        <li><strong>스토리 시각화 요소</strong>: 길 위의 이야기를 표현하는 시각적 요소</li>
+                                        <li>야간 조명 시스템으로 24시간 관광 지원</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 스토리텔링 거점 시설 -->
+            <div class="card mb-5">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">② 스토리텔링 거점 시설 조성</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 border-warning">
+                                <div class="card-header bg-warning text-white">
+                                    <h5 class="mb-0">황룡 스토리 허브</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/icons/story_hub_icon.svg" class="img-fluid rounded mb-3" alt="황룡 스토리 허브">
+                                    <p><strong>위치</strong>: 황룡강변 중심부</p>
+                                    <p><strong>기능</strong>: 스토리로드 종합 안내 센터</p>
+                                    <ul>
+                                        <li>5개 테마 전시관, 미디어 체험관</li>
+                                        <li>안내데스크, 휴게 공간</li>
+                                        <li>전자지도와 앱 다운로드 센터</li>
+                                        <li>패스포트 발급 창구</li>
+                                        <li>장성 특산품 판매점</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 border-primary">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0">테마별 거점 스테이션</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/icons/theme_station_icon.svg" class="img-fluid rounded mb-3" alt="테마 스테이션">
+                                    <p><strong>위치</strong>: 각 코스별 1개씩 총 5개소</p>
+                                    <p><strong>기능</strong>: 테마별 정보 제공 및 체험 거점</p>
+                                    <ul>
+                                        <li>코스 정보 제공, 휴식 공간</li>
+                                        <li>테마별 특화 전시 및 체험 공간</li>
+                                        <li>특화 프로그램 운영</li>
+                                        <li>화장실, 음수대, 벤치, 충전소 등 편의시설</li>
+                                        <li>계절별 특화 프로그램 진행</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 border-success">
+                                <div class="card-header bg-success text-white">
+                                    <h5 class="mb-0">스토리 포인트 쉼터</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/icons/story_point_icon.svg" class="img-fluid rounded mb-3" alt="스토리 쉼터">
+                                    <p><strong>위치</strong>: 주요 이야기 지점 25개소</p>
+                                    <p><strong>기능</strong>: 스토리 전달 및 휴식</p>
+                                    <ul>
+                                        <li>각 지점의 스토리와 연계된 테마형 디자인</li>
+                                        <li>QR코드 정보 안내판</li>
+                                        <li>특화 포토존</li>
+                                        <li>소규모 체험 공간</li>
+                                        <li>쉼터 및 간이 휴게 공간</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 접근성 개선 및 연결 체계 -->
+            <div class="card mb-5">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">③ 접근성 개선 및 연결 체계 구축</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0">도보 관광 코스 정비</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/icons/walking_route.svg" class="img-fluid rounded mb-3" alt="도보 관광 코스 정비">
+                                    <ul>
+                                        <li>기존 보행로 정비 및 스토리로드 전용 표식 설치 (총 50km)</li>
+                                        <li>황룡강변 데크로드 확장 및 야간 조명 설치 (5km)</li>
+                                        <li>무장애 탐방로 조성으로 장애인/노약자 접근성 향상 (주요 구간 10km)</li>
+                                        <li>구간별 난이도 표시 및 소요시간 안내</li>
+                                        <li>안전시설 설치 및 응급상황 대응 체계 구축</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0">자전거 도로 연계</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/icons/bicycle_route.svg" class="img-fluid rounded mb-3" alt="자전거 도로">
+                                    <ul>
+                                        <li>기존 자전거길과 스토리로드 연결 체계 구축 (총 30km)</li>
+                                        <li>테마별 자전거 거치대 및 대여소 설치 (10개소)</li>
+                                        <li>테마별 자전거 투어 코스 개발</li>
+                                        <li>자전거 정비소 및 휴게시설 설치</li>
+                                        <li>자전거 이용자 맞춤 안내 시스템 구축</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0">대중교통 연계체계</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/icons/public_transport.svg" class="img-fluid rounded mb-3" alt="대중교통 연계">
+                                    <ul>
+                                        <li>장성 시내버스 및 투어버스와 스토리로드 연계 노선 개발</li>
+                                        <li>주요 거점에 확장형 버스 정류장 설치 (환승 정보 제공)</li>
+                                        <li>'황룡 셔틀' 순환버스 운영 (주요 스토리 포인트 연결)</li>
+                                        <li>교통약자를 위한 특별 이동 서비스 제공</li>
+                                        <li>주요 관광지 주차장 확충 및 안내 시스템 개선</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 지속가능한 인프라 특성 -->
+            <div class="card mb-5">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">④ 지속가능한 인프라 특성</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-header bg-success text-white">
+                                    <h5 class="mb-0">친환경 설계</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/icons/eco_design.svg" class="img-fluid rounded mb-3" alt="친환경 설계">
+                                    <ul>
+                                        <li>지역 친환경 자재 활용으로 환경 부담 최소화</li>
+                                        <li>태양광 에너지를 활용한 자가발전 시스템 적용</li>
+                                        <li>우수 활용 시스템 및 생태공학적 설계 적용</li>
+                                        <li>야생동물 서식지 보호 및 생태계 교란 최소화</li>
+                                        <li>지형 변화를 최소화한 자연친화적 설계</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0">유지관리 시스템</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/icons/maintenance.svg" class="img-fluid rounded mb-3" alt="유지관리 시스템">
+                                    <ul>
+                                        <li>주민참여형 스토리로드 관리단 운영</li>
+                                        <li>IoT 기반 시설물 모니터링 시스템 구축</li>
+                                        <li>계절별/테마별 차별화된 관리 매뉴얼 수립</li>
+                                        <li>지역 일자리와 연계한 관리 인력 운영</li>
+                                        <li>민관협력 유지관리 거버넌스 구축</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 인프라 구축 단계별 계획 -->
+            <div class="card mb-5">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">⑤ 인프라 구축 단계별 계획</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="timeline-steps">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                        <div class="card h-100 border-warning">
+                                            <div class="card-header bg-warning text-white">
+                                                <h5 class="mb-0 d-flex align-items-center"><img src="images/icons/phase1.svg" width="30" height="30" class="me-2" alt="1단계"> 1단계: 기반 조성</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-muted">2025년 상반기</p>
+                                                <ul>
+                                                    <li>통합 디자인 시스템 개발</li>
+                                                    <li>핵심 코스 2개 선정 및 시범 구축</li>
+                                                    <li>황룡 스토리 허브 설계 및 착공</li>
+                                                    <li>기존 시설 정비 및 연계 체계 구축</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="card h-100 border-primary">
+                                            <div class="card-header bg-primary text-white">
+                                                <h5 class="mb-0 d-flex align-items-center"><img src="images/icons/phase2.svg" width="30" height="30" class="me-2" alt="2단계"> 2단계: 핵심 구축</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-muted">2025년 하반기</p>
+                                                <ul>
+                                                    <li>황룡 스토리 허브 완공 및 운영</li>
+                                                    <li>5개 테마 스토리로드 전체 구축</li>
+                                                    <li>테마별 거점 스테이션 구축</li>
+                                                    <li>대중교통 연계 시스템 구축</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="card h-100 border-success">
+                                            <div class="card-header bg-success text-white">
+                                                <h5 class="mb-0 d-flex align-items-center"><img src="images/icons/phase3.svg" width="30" height="30" class="me-2" alt="3단계"> 3단계: 확장 구축</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-muted">2026년</p>
+                                                <ul>
+                                                    <li>스토리 포인트 쉼터 전체 구축</li>
+                                                    <li>랜드마크 조형물 전체 설치</li>
+                                                    <li>무장애 탐방로 확대</li>
+                                                    <li>자전거 투어 시스템 구축</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="card h-100 border-info">
+                                            <div class="card-header bg-info text-white">
+                                                <h5 class="mb-0 d-flex align-items-center"><img src="images/icons/phase4.svg" width="30" height="30" class="me-2" alt="4단계"> 4단계: 고도화</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-muted">2027년 이후</p>
+                                                <ul>
+                                                    <li>지역 연계 확대 (인접 도시 연결)</li>
+                                                    <li>계절별 특화 인프라 강화</li>
+                                                    <li>국제 관광객 맞춤 시설 확충</li>
+                                                    <li>지속가능 유지관리체계 고도화</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+ 
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>『장성의 내일을 함께해, 봄』</h5>
+                    <p>2025년 정책제안 공모전</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>© 2025 장성군 정책제안 공모전</p>
+
+*사진 출처: <a href="https://www.jangseong.go.kr/home/tour_new">www.jangseong.go.kr </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
