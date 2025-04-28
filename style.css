@@ -1,0 +1,229 @@
+/* 기본 스타일 */
+:root {
+    --jangseong-primary: #FFD700; /* 황금색 - 황룡 모티프 */
+    --jangseong-secondary: #228B22; /* 포레스트 그린 - 자연 환경 */
+    --jangseong-accent: #FF6347; /* 토마토 - 액센트 색상 */
+    --jangseong-light: #F5F5DC; /* 베이지 - 배경 색상 */
+    --jangseong-dark: #333333; /* 다크 그레이 - 텍스트 */
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--jangseong-dark);
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* 헤더 스타일 */
+header {
+    background: linear-gradient(135deg, var(--jangseong-primary), #FFA500) !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* 내비게이션 스타일 */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--jangseong-dark);
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .active>.nav-link {
+    color: var(--jangseong-primary);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+/* 버튼 스타일 */
+.btn-warning {
+    background-color: var(--jangseong-primary);
+    border-color: var(--jangseong-primary);
+}
+
+.btn-outline-warning {
+    color: var(--jangseong-primary);
+    border-color: var(--jangseong-primary);
+}
+
+.btn-outline-warning:hover {
+    background-color: var(--jangseong-primary);
+    color: white;
+}
+
+/* 카드 스타일 */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-header.bg-warning {
+    background-color: var(--jangseong-primary) !important;
+}
+
+.border-warning {
+    border-color: var(--jangseong-primary) !important;
+}
+
+/* 섹션 스타일 */
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--jangseong-primary);
+}
+
+.text-center h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 배지 스타일 */
+.badge.bg-warning {
+    background-color: var(--jangseong-primary) !important;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: var(--jangseong-dark) !important;
+}
+
+/* 미디어 쿼리 - 반응형 디자인 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* 테이블 스타일 */
+.table-bordered {
+    border-color: #dee2e6;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 215, 0, 0.05);
+}
+
+/* 타임라인 스타일 */
+.timeline {
+    position: relative;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: var(--jangseong-primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 3px solid var(--jangseong-primary);
+    border-radius: 50%;
+    top: 15px;
+    z-index: 1;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item.left::after {
+    right: -10px;
+}
+
+.timeline-item.right::after {
+    left: -10px;
+}
+
+@media (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item.left::after {
+        left: 21px;
+    }
+    
+    .timeline-item.right {
+        left: 0;
+    }
+    
+    .timeline-item.right::after {
+        left: 21px;
+    }
+}
+
+/* 추가 강조 스타일 */
+.highlight-box {
+    background-color: rgba(255, 215, 0, 0.1);
+    border-left: 4px solid var(--jangseong-primary);
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.quote-box {
+    font-style: italic;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--jangseong-primary);
+}
